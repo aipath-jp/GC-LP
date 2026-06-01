@@ -85,6 +85,11 @@
         }
 
         /* プライバシーポリシーモーダル */
+        @keyframes badgePulse {
+            0%, 70%, 100% { opacity: 1; }
+            70% { opacity: 0.15; }
+        }
+
         .modal {
             opacity: 0;
             visibility: hidden;
@@ -187,6 +192,35 @@
     </div>
 </section>
 
+
+<!-- ▼▼▼ キャンペーンバナー追加 ▼▼▼ -->
+<section id="campaign" class="py-6 bg-gradient-to-r from-amber-500 via-yellow-400 to-amber-500 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10" style="background-image: repeating-linear-gradient(45deg, #fff 0, #fff 1px, transparent 0, transparent 50%); background-size: 12px 12px;"></div>
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="max-w-4xl mx-auto bg-white/95 rounded-2xl shadow-2xl p-6 md:p-8 border-2 border-amber-400 flex flex-col md:flex-row items-center gap-6">
+            <div class="flex-shrink-0 bg-red-600 text-white rounded-xl px-5 py-3 text-center shadow-lg transform -rotate-1">
+                <p class="text-xs font-extrabold tracking-widest uppercase mb-0.5">期間限定</p>
+                <p class="text-2xl font-extrabold leading-tight">このサイト限定</p>
+                <p class="text-xs font-bold mt-0.5">キャンペーン実施中</p>
+            </div>
+            <div class="flex-1 text-center md:text-left">
+                <p class="text-sm font-bold text-red-600 mb-1 tracking-wide">🎁 今だけの特別特典</p>
+                <h3 class="text-xl md:text-2xl font-extrabold text-gray-900 leading-tight mb-2 font-serif">
+                    電極カートリッジ（通常<span class="line-through text-gray-400">39,600円</span>）が<br class="md:hidden">
+                    <span class="text-red-600 text-3xl md:text-4xl">1本無料</span>でついてくる！
+                </h3>
+                <p class="text-sm text-gray-600">※このサイトからのお申し込みのみ適用。数量限定につき、お早めにどうぞ。</p>
+            </div>
+            <div class="flex-shrink-0">
+                <a href="https://forms.gle/kCiRHFT1jF2dz7NU9" target="_blank" rel="noopener noreferrer"
+                   class="bg-red-600 text-white px-7 py-4 rounded-full font-extrabold text-base shadow-xl hover:bg-red-700 transition-all transform hover:-translate-y-1 hover:shadow-red-300 inline-block whitespace-nowrap">
+                    無料資料請求 →
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ▲▲▲ キャンペーンバナー追加 ▲▲▲ -->
 
 <section id="problem" class="py-20 bg-white">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -445,7 +479,11 @@
                         導入プラン・価格
                     </h2>
                     <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                        <div class="bg-white rounded-2xl shadow-xl overflow-hidden border-2 border-rose-100 transform hover:-translate-y-1 transition duration-300">
+                        <div class="bg-white rounded-2xl shadow-xl overflow-hidden border-2 border-rose-400 transform hover:-translate-y-1 transition duration-300 relative">
+                            <!-- キャンペーンリボン -->
+                            <div class="absolute top-4 right-4 bg-red-600 text-white text-xs font-extrabold px-3 py-1.5 rounded-full shadow-lg z-10" style="animation: badgePulse 2.5s ease-in-out infinite;">
+                                🎁 限定特典あり
+                            </div>
                             <div class="bg-rose-600 text-white py-4 text-center">
                                 <h3 class="text-xl font-bold tracking-wide">サロン仕様タイプ</h3>
                             </div>
@@ -456,7 +494,21 @@
                                     <span class="text-xl font-bold text-gray-700">円</span>
                                     <span class="text-sm text-gray-500">(税別)</span>
                                 </div>
-                                <p class="text-gray-500 text-sm mb-6">(税込 642,400円)</p>
+                                <p class="text-gray-500 text-sm mb-4">(税込 642,400円)</p>
+
+                                <!-- キャンペーン特典ボックス -->
+                                <div class="bg-gradient-to-r from-red-50 to-amber-50 border-2 border-red-400 rounded-xl p-4 mb-6 text-left">
+                                    <p class="text-xs font-extrabold text-red-600 text-center mb-2 tracking-widest uppercase">🎉 このサイト限定キャンペーン</p>
+                                    <div class="flex items-center justify-between">
+                                        <div>
+                                            <p class="text-sm font-bold text-gray-800">電極カートリッジ 1本</p>
+                                            <p class="text-xs text-gray-500">通常価格 <span class="line-through">39,600円（税込）</span></p>
+                                        </div>
+                                        <div class="bg-red-600 text-white font-extrabold text-xl px-4 py-1.5 rounded-lg shadow-md flex-shrink-0 ml-2">
+                                            無料！
+                                        </div>
+                                    </div>
+                                </div>
                                 
                                 <div class="bg-rose-50 rounded-lg p-5 text-left">
                                     <p class="text-xs text-rose-500 font-bold text-center mb-3">内訳 (税別)</p>
@@ -475,7 +527,11 @@
                             </div>
                         </div>
 
-                        <div class="bg-white rounded-2xl shadow-xl overflow-hidden border-2 border-pink-100 transform hover:-translate-y-1 transition duration-300">
+                        <div class="bg-white rounded-2xl shadow-xl overflow-hidden border-2 border-pink-400 transform hover:-translate-y-1 transition duration-300 relative">
+                            <!-- キャンペーンリボン -->
+                            <div class="absolute top-4 right-4 bg-red-600 text-white text-xs font-extrabold px-3 py-1.5 rounded-full shadow-lg z-10" style="animation: badgePulse 2.5s ease-in-out infinite;">
+                                🎁 限定特典あり
+                            </div>
                             <div class="bg-pink-500 text-white py-4 text-center">
                                 <h3 class="text-xl font-bold tracking-wide">個人仕様タイプ</h3>
                             </div>
@@ -486,8 +542,22 @@
                                     <span class="text-xl font-bold text-gray-700">円</span>
                                     <span class="text-sm text-gray-500">(税別)</span>
                                 </div>
-                                <p class="text-gray-500 text-sm mb-6">(税込 602,800円)</p>
-                                
+                                <p class="text-gray-500 text-sm mb-4">(税込 602,800円)</p>
+
+                                <!-- キャンペーン特典ボックス -->
+                                <div class="bg-gradient-to-r from-red-50 to-amber-50 border-2 border-red-400 rounded-xl p-4 mb-6 text-left">
+                                    <p class="text-xs font-extrabold text-red-600 text-center mb-2 tracking-widest uppercase">🎉 このサイト限定キャンペーン</p>
+                                    <div class="flex items-center justify-between">
+                                        <div>
+                                            <p class="text-sm font-bold text-gray-800">電極カートリッジ 1本</p>
+                                            <p class="text-xs text-gray-500">通常価格 <span class="line-through">39,600円（税込）</span></p>
+                                        </div>
+                                        <div class="bg-red-600 text-white font-extrabold text-xl px-4 py-1.5 rounded-lg shadow-md flex-shrink-0 ml-2">
+                                            無料！
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <div class="bg-pink-50 rounded-lg p-5 text-left h-full">
                                     <p class="text-xs text-pink-500 font-bold text-center mb-3">内訳 (税別)</p>
                                     <ul class="text-sm text-gray-700 space-y-2">
