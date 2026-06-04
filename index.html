@@ -1,754 +1,1183 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3VFZ318GY2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-3VFZ318GY2');
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GOD-CLEANER・GOLD 製品LP | 株式会社マインドフィットネス</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3VFZ318GY2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3VFZ318GY2');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GOD-CLEANER・GOLD 製品LP | 株式会社マインドフィットネス</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="導入実績4,500台突破！デトックスマシンGOD-CLEANER・GOLDで集客の悩みを解決。視覚的インパクトで口コミ拡散、リピート率50%向上の実績。エステサロン・整体院の売上アップを実現します。">
-    <meta name="keywords" content="デトックスマシン,GOD-CLEANER,ゴッドクリーナー,エステサロン,整体院,集客,リピート率向上,美容機器,サロン経営,売上アップ">
-    <meta name="author" content="株式会社マインドフィットネス">
-    <meta name="robots" content="index, follow">
-    <meta name="language" content="Japanese">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://mindf.jp/">
-    <meta property="og:title" content="GOD-CLEANER・GOLD - 集客の悩みを感動と口コミで解決 | 株式会社マインドフィットネス">
-    <meta property="og:description" content="導入実績4,500台突破！視覚的インパクトで口コミ拡散、リピート率50%向上。エステサロン・整体院の売上アップを実現するデトックスマシン。">
-    <meta property="og:image" content="https://github.com/user-attachments/assets/79e61367-1d66-446b-9ea1-69fb77bc0b4e">
-    <meta property="og:locale" content="ja_JP">
-    <meta property="og:site_name" content="GOD-CLEANER・GOLD">
-    
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="GOD-CLEANER・GOLD - 集客の悩みを感動と口コミで解決">
-    <meta name="twitter:description" content="導入実績4,500台突破！視覚的インパクトで口コミ拡散、リピート率50%向上。エステサロン・整体院の売上アップを実現するデトックスマシン。">
-    <meta name="twitter:image" content="https://github.com/user-attachments/assets/79e61367-1d66-446b-9ea1-69fb77bc0b4e">
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://mindf.jp/">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/jpeg" href="https://github.com/user-attachments/assets/79e61367-1d66-446b-9ea1-69fb77bc0b4e">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <meta name="description" content="導入実績4,500台突破！デトックスマシンGOD-CLEANER・GOLDで集客の悩みを解決。視覚的インパクトで口コミ拡散、リピート率50%向上の実績。エステサロン・整体院の売上アップを実現します。">
+  <meta name="keywords" content="デトックスマシン,GOD-CLEANER,ゴッドクリーナー,エステサロン,整体院,集客,リピート率向上,美容機器,サロン経営,売上アップ">
+  <meta name="author" content="株式会社マインドフィットネス">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mindf.jp/">
+  <meta property="og:title" content="GOD-CLEANER・GOLD - 集客の悩みを感動と口コミで解決 | 株式会社マインドフィットネス">
+  <meta property="og:description" content="導入実績4,500台突破！視覚的インパクトで口コミ拡散、リピート率50%向上。エステサロン・整体院の売上アップを実現するデトックスマシン。">
+  <meta property="og:image" content="https://github.com/user-attachments/assets/79e61367-1d66-446b-9ea1-69fb77bc0b4e">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://mindf.jp/">
+  <link rel="icon" type="image/jpeg" href="https://github.com/user-attachments/assets/79e61367-1d66-446b-9ea1-69fb77bc0b4e">
 
-    <style>
-        body {
-            font-family: 'Noto Sans JP', sans-serif;
-        }
-        h1, h2, .font-serif {
-            font-family: 'Shippori Mincho', serif;
-        }
-        html { scroll-behavior: smooth; }
-        
-        /* 背景グラデーション（白〜薄いゴールド） */
-        .bg-gradient-hero {
-            background: linear-gradient(135deg, #ffffff 0%, #fffbf0 100%);
-        }
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Shippori+Mincho:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-        .chart-container { 
-            position: relative; 
-            width: 100%; 
-            max-width: 500px; 
-            margin-left: auto; 
-            margin-right: auto; 
-            height: 300px; 
-            max-height: 350px; 
-        }
-        @media (min-width: 768px) { 
-            .chart-container { height: 350px; } 
-        }
-        
-        /* 画像のフェードイン演出 */
-        .fade-in-up {
-            animation: fadeInUp 0.8s ease-out forwards;
-        }
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
+  <style>
+    :root {
+      --gold-deep:    #8B6914;
+      --gold-mid:     #C9982A;
+      --gold-light:   #E8C97A;
+      --gold-pale:    #FAF3DE;
+      --gold-shine:   #FDF8EC;
+      --ink:          #1A1612;
+      --ink-mid:      #3D3529;
+      --ink-soft:     #6B5F52;
+      --cream:        #FDFAF5;
+      --cream-dark:   #F5EFE4;
+      --white:        #FFFFFF;
+      --red-vivid:    #C0392B;
+      --shadow-gold:  rgba(139,105,20,0.18);
+    }
 
-        /* プライバシーポリシーモーダル */
-        @keyframes badgePulse {
-            0%, 70%, 100% { opacity: 1; }
-            70% { opacity: 0.15; }
-        }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
-        .modal {
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.3s ease, visibility 0.3s ease;
-        }
-        .modal.active {
-            opacity: 1;
-            visibility: visible;
-        }
-    </style>
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      background: var(--cream);
+      color: var(--ink);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── 見出しフォント ── */
+    .f-serif    { font-family: 'Shippori Mincho', serif; }
+    .f-display  { font-family: 'Cormorant Garamond', serif; }
+
+    /* ── ゴールドライン装飾 ── */
+    .gold-rule {
+      display: block;
+      width: 48px; height: 2px;
+      background: linear-gradient(90deg, var(--gold-deep), var(--gold-light));
+      margin: 0 auto;
+    }
+    .gold-rule-left {
+      display: block;
+      width: 48px; height: 2px;
+      background: linear-gradient(90deg, var(--gold-deep), var(--gold-light));
+    }
+
+    /* ── ゴールドグラデーション装飾テキスト ── */
+    .text-gold-grad {
+      background: linear-gradient(135deg, var(--gold-deep) 0%, var(--gold-mid) 50%, var(--gold-light) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* ── ゴールドボタン ── */
+    .btn-gold {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--gold-deep) 0%, var(--gold-mid) 60%, var(--gold-light) 100%);
+      color: var(--white);
+      font-family: 'Noto Sans JP', sans-serif;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      border-radius: 0;
+      padding: 16px 40px;
+      font-size: 15px;
+      position: relative;
+      overflow: hidden;
+      transition: opacity 0.25s, transform 0.25s;
+      text-decoration: none;
+      text-align: center;
+    }
+    .btn-gold::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: rgba(255,255,255,0.15);
+      opacity: 0;
+      transition: opacity 0.25s;
+    }
+    .btn-gold:hover { opacity: 0.92; transform: translateY(-2px); }
+    .btn-gold:hover::after { opacity: 1; }
+
+    .btn-outline {
+      display: inline-block;
+      border: 1.5px solid var(--gold-deep);
+      color: var(--gold-deep);
+      font-family: 'Noto Sans JP', sans-serif;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      padding: 15px 40px;
+      font-size: 15px;
+      border-radius: 0;
+      transition: background 0.25s, color 0.25s;
+      text-decoration: none;
+      text-align: center;
+    }
+    .btn-outline:hover {
+      background: var(--gold-deep);
+      color: var(--white);
+    }
+
+    /* ── セクション共通 ── */
+    .section-tag {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 11px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold-deep);
+      font-weight: 600;
+    }
+
+    /* ── ヘッダー ── */
+    #site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(253,250,245,0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(139,105,20,0.12);
+    }
+
+    /* ── ヒーロー ── */
+    #hero {
+      background: var(--cream);
+      overflow: hidden;
+      position: relative;
+    }
+    #hero::before {
+      content: '';
+      position: absolute;
+      top: -80px; right: -80px;
+      width: 320px; height: 320px;
+      background: radial-gradient(circle, rgba(201,152,42,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    #hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0;
+      width: 100%; height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold-light), transparent);
+    }
+
+    /* ── 数字カウント ── */
+    .stat-box {
+      border: 1px solid rgba(139,105,20,0.25);
+      background: linear-gradient(135deg, var(--gold-shine), var(--gold-pale));
+      position: relative;
+      overflow: hidden;
+    }
+    .stat-box::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--gold-deep), var(--gold-light));
+    }
+
+    /* ── キャンペーンバナー ── */
+    #campaign {
+      background: linear-gradient(135deg, var(--ink) 0%, var(--ink-mid) 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    #campaign::before {
+      content: '';
+      position: absolute; inset: 0;
+      background-image:
+        repeating-linear-gradient(45deg, rgba(201,152,42,0.06) 0px, rgba(201,152,42,0.06) 1px, transparent 1px, transparent 12px);
+      pointer-events: none;
+    }
+
+    /* ── 課題セクション ── */
+    .problem-card {
+      border-left: 3px solid var(--gold-mid);
+      background: var(--white);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .problem-card:hover {
+      transform: translateX(4px);
+      box-shadow: -4px 0 0 var(--gold-deep), 4px 4px 20px rgba(0,0,0,0.06);
+    }
+
+    /* ── ソリューション ── */
+    #solution {
+      background: var(--ink);
+      position: relative;
+      overflow: hidden;
+    }
+    #solution::before {
+      content: '';
+      position: absolute;
+      top: -100px; right: -100px;
+      width: 400px; height: 400px;
+      background: radial-gradient(circle, rgba(201,152,42,0.08) 0%, transparent 65%);
+      pointer-events: none;
+    }
+
+    .merit-card {
+      border: 1px solid rgba(201,152,42,0.2);
+      background: rgba(255,255,255,0.04);
+      transition: background 0.3s, border-color 0.3s;
+    }
+    .merit-card:hover {
+      background: rgba(201,152,42,0.06);
+      border-color: rgba(201,152,42,0.4);
+    }
+
+    /* ── 声セクション ── */
+    .voice-card {
+      background: var(--white);
+      border: 1px solid rgba(139,105,20,0.1);
+      box-shadow: 0 4px 32px rgba(0,0,0,0.05);
+    }
+
+    /* ── 価格カード ── */
+    .price-card {
+      background: var(--white);
+      border: 1px solid rgba(139,105,20,0.15);
+      transition: transform 0.3s, box-shadow 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+    .price-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--gold-deep), var(--gold-light));
+    }
+    .price-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 48px rgba(139,105,20,0.15);
+    }
+
+    /* ── メディアグリッド ── */
+    .media-item {
+      border: 1px solid rgba(139,105,20,0.12);
+      background: var(--gold-shine);
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .media-item:hover {
+      background: var(--gold-pale);
+      border-color: var(--gold-mid);
+    }
+
+    /* ── フォームセクション ── */
+    #contact {
+      background: var(--ink);
+    }
+
+    /* ── フッター ── */
+    footer {
+      background: #100E0B;
+    }
+
+    /* ── モーダル ── */
+    .modal {
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+    .modal.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    /* ── アニメーション ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes badgePulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+    @keyframes shimmer {
+      0%   { background-position: -200% center; }
+      100% { background-position: 200% center; }
+    }
+
+    .anim-fadeup {
+      opacity: 0;
+      animation: fadeUp 0.7s ease forwards;
+    }
+    .delay-1 { animation-delay: 0.1s; }
+    .delay-2 { animation-delay: 0.2s; }
+    .delay-3 { animation-delay: 0.3s; }
+    .delay-4 { animation-delay: 0.4s; }
+
+    /* スクロール検知 */
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ── チャートコンテナ ── */
+    .chart-container {
+      position: relative;
+      width: 100%;
+      max-width: 440px;
+      margin: 0 auto;
+      height: 280px;
+    }
+
+    /* ── カスタムナンバー ── */
+    .big-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-weight: 600;
+      line-height: 1;
+    }
+
+    /* ── 画像の一貫したスタイル ── */
+    .img-cover {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* ── 区切り線 ── */
+    .divider-gold {
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold-light), transparent);
+    }
+  </style>
 </head>
-<body class="bg-white text-gray-800">
+<body>
 
-    <header class="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-100">
-        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
-            <div class="flex flex-col justify-center">
-                <span class="text-[10px] sm:text-xs text-gray-500 font-bold tracking-wider mb-0.5">株式会社マインドフィットネス</span>
-                <div class="text-lg md:text-2xl font-bold text-amber-600 font-serif tracking-wide leading-none">
-                    GOD-CLEANER・GOLD
-                </div>
-            </div>
-            <div class="hidden lg:flex space-x-6 text-sm font-medium">
-                <a href="#solution" class="text-gray-600 hover:text-amber-600 transition-colors">特徴</a>
-                <a href="#contact" class="text-gray-600 hover:text-amber-600 transition-colors">研究データ</a>
-                <a href="#media-achievements" class="text-gray-600 hover:text-amber-600 transition-colors">テレビ紹介</a>
-                <a href="#price" class="text-gray-600 hover:text-amber-600 transition-colors">価格・プラン</a>
-            </div>
-            <a href="https://forms.gle/kCiRHFT1jF2dz7NU9" target="_blank" rel="noopener noreferrer" class="bg-amber-600 text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-amber-700 transition-all shadow-lg hover:shadow-amber-200 transform hover:-translate-y-0.5">
-                無料資料請求
-            </a>
-        </nav>
-    </header>
-
-    <main>
-        <section id="hero" class="bg-gradient-hero pt-12 pb-20 lg:pt-24 lg:pb-32 overflow-hidden relative">
-    <div class="absolute top-0 right-0 w-2/3 h-full bg-amber-50/50 rounded-bl-[100px] -z-10"></div>
-    <div class="absolute top-20 left-10 w-32 h-32 bg-amber-200 rounded-full blur-3xl opacity-20 -z-10"></div>
-
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
-
-            <div class="lg:w-1/2 fade-in-up z-10">
-                <h1 class="text-4xl lg:text-5xl font-bold tracking-tight text-gray-900 mb-6 leading-tight font-serif">
-                    からだの悩み<br>サロンの悩み<br>
-                    これ<span class="text-amber-600 relative inline-block">
-                        １台
-                        <span class="absolute bottom-1 left-0 w-full h-3 bg-amber-200/50 -z-10 transform -skew-x-12"></span>
-                    </span>
-                    で解決
-                </h1>
-
-                <h2 class="text-l text-gray-600 mb-8 font-medium">
-                    次世代デトックスマシン <br class="md:hidden">
-                    <span class="text-amber-600 font-bold">GOD-CLEANER・GOLD</span>
-                </h2>
-
-                <!-- モバイル用動画表示 -->
-<div class="relative z-0 w-full mb-10 md:hidden">
-    <div class="relative rounded-3xl overflow-hidden shadow-xl border-[4px] border-white transform rotate-1 transition duration-500 max-w-sm mx-auto">
-        <video src="https://github.com/user-attachments/assets/7827a51b-eb60-42f2-8a1e-a0a2d673c4c6"
-               autoplay muted loop playsinline
-               class="w-full h-auto object-cover">
-        </video>
-    </div>
-</div>
-
-                <div class="bg-gradient-to-r from-yellow-50 to-amber-100 p-5 rounded-xl shadow-lg border border-amber-300 inline-flex items-center gap-5 mb-10 transform transition hover:scale-105 duration-300 ring-2 ring-amber-400 ring-offset-2">
-    <div class="bg-amber-200 p-3 rounded-full text-amber-700 flex-shrink-0">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-    </div>
+<!-- ══════════════════════════════════════
+     HEADER
+══════════════════════════════════════ -->
+<header id="site-header">
+  <div style="max-width:1200px; margin:0 auto; padding:0 20px; display:flex; align-items:center; justify-content:space-between; height:64px;">
     <div>
-        <p class="text-xs text-amber-700 font-extrabold uppercase tracking-widest mb-0.5">導入実績</p>
-        <p class="text-5xl font-extrabold text-amber-900 leading-tight">
-            4,500<span class="text-xl font-bold text-amber-800 ml-1">台突破!!</span>
-        </p>
-        <p class="text-sm text-gray-700 font-semibold mt-1">
-            選ばれ続けている信頼と実績
-        </p>
+      <p style="font-size:10px; color:var(--ink-soft); letter-spacing:0.1em; margin-bottom:2px;">株式会社マインドフィットネス</p>
+      <p class="f-serif" style="font-size:18px; font-weight:700; color:var(--gold-deep); letter-spacing:0.05em; line-height:1;">GOD-CLEANER・GOLD</p>
     </div>
-</div>
+    <nav style="display:none; gap:28px; font-size:13px; font-weight:500; color:var(--ink-soft);" id="pc-nav">
+      <a href="#solution" style="text-decoration:none; color:inherit; transition:color 0.2s;" onmouseover="this.style.color='var(--gold-deep)'" onmouseout="this.style.color='var(--ink-soft)'">特徴</a>
+      <a href="#media-achievements" style="text-decoration:none; color:inherit; transition:color 0.2s;" onmouseover="this.style.color='var(--gold-deep)'" onmouseout="this.style.color='var(--ink-soft)'">テレビ紹介</a>
+      <a href="#price" style="text-decoration:none; color:inherit; transition:color 0.2s;" onmouseover="this.style.color='var(--gold-deep)'" onmouseout="this.style.color='var(--ink-soft)'">価格・プラン</a>
+    </nav>
+    <a href="https://forms.gle/kCiRHFT1jF2dz7NU9" target="_blank" rel="noopener noreferrer" class="btn-gold" style="padding:10px 22px; font-size:13px; border-radius:2px;">
+      無料資料請求
+    </a>
+  </div>
+</header>
 
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="https://forms.gle/kCiRHFT1jF2dz7NU9" target="_blank" class="bg-amber-600 text-white text-center px-8 py-4 rounded-full font-bold shadow-lg hover:bg-amber-700 transition-all hover:shadow-amber-300 transform hover:-translate-y-1">
-                        無料で資料をもらう
-                    </a>
-                    <a href="#problem" class="bg-white text-gray-600 border border-gray-300 text-center px-8 py-4 rounded-full font-bold hover:bg-gray-50 transition-colors">
-                        詳しく見る
-                    </a>
-                </div>
-            </div>
+<style>
+  @media(min-width:768px){ #pc-nav{ display:flex!important; } }
+</style>
 
-            <!-- PC用動画 -->
-<div class="lg:w-1/2 relative z-0 w-full hidden md:block">
-    <div class="relative rounded-3xl overflow-hidden shadow-2xl border-[6px] border-white transform rotate-1 hover:rotate-0 transition duration-500">
-        <video src="https://github.com/user-attachments/assets/7827a51b-eb60-42f2-8a1e-a0a2d673c4c6"
-               autoplay muted loop playsinline
-               class="w-full h-auto object-cover">
-        </video>
-    </div>
-    <div class="absolute -bottom-6 -right-6 w-full h-full border-2 border-amber-200 rounded-3xl -z-10 hidden md:block"></div>
-</div>
+<!-- ══════════════════════════════════════
+     HERO
+══════════════════════════════════════ -->
+<section id="hero" style="padding: 48px 0 0;">
+  <div style="max-width:1200px; margin:0 auto; padding:0 20px;">
 
+    <!-- スマホ: 縦並び / PC(900px以上): 左テキスト・右動画の2カラム -->
+    <div id="hero-cols" style="display:flex; flex-direction:column; gap:24px;">
+
+      <!-- 左カラム: テキスト＋バッジ＋CTA -->
+      <div id="hero-left" style="display:flex; flex-direction:column; gap:24px;">
+
+        <!-- ① キャッチコピー＋サブテキスト -->
+        <div class="anim-fadeup delay-1">
+          <p class="section-tag" style="margin-bottom:16px;">Next Generation Detox Machine</p>
+          <h1 class="f-serif anim-fadeup delay-2" style="font-size:clamp(36px,9vw,64px); font-weight:800; line-height:1.25; letter-spacing:-0.01em; color:var(--ink);">
+            からだの悩み<br>
+            サロンの悩み<br>
+            これ<span class="text-gold-grad">１台</span>で解決
+          </h1>
+          <p class="anim-fadeup delay-3" style="margin-top:16px; font-size:15px; color:var(--ink-soft); font-weight:400; letter-spacing:0.03em; line-height:1.7;">
+            次世代デトックスマシン <span style="color:var(--gold-deep); font-weight:700;">GOD-CLEANER・GOLD</span>
+          </p>
         </div>
+
+        <!-- ② 動画（スマホのみ・キャッチコピー直下） -->
+        <div class="anim-fadeup delay-3" id="hero-video-mobile" style="position:relative;">
+          <div style="position:relative; overflow:hidden; border:3px solid var(--white); box-shadow:0 24px 64px rgba(0,0,0,0.12), 0 0 0 1px rgba(139,105,20,0.15);">
+            <video src="https://github.com/user-attachments/assets/7827a51b-eb60-42f2-8a1e-a0a2d673c4c6"
+                   autoplay muted loop playsinline
+                   style="width:100%; display:block; height:auto; max-height:520px; object-fit:cover;">
+            </video>
+            <div style="position:absolute; bottom:0; left:0; right:0; height:60px; background:linear-gradient(to top, rgba(26,22,18,0.3), transparent);"></div>
+          </div>
+          <div style="position:absolute; top:12px; right:-8px; bottom:-8px; left:8px; border:1px solid rgba(201,152,42,0.3); z-index:-1;"></div>
+        </div>
+
+        <!-- ③ 実績バッジ -->
+        <div class="stat-box anim-fadeup delay-4" style="display:inline-flex; align-items:center; gap:20px; padding:20px 28px;">
+          <div>
+            <p style="font-size:11px; font-weight:700; letter-spacing:0.2em; color:var(--gold-deep); text-transform:uppercase; margin-bottom:4px;">導入実績</p>
+            <p class="big-num" style="font-size:56px; color:var(--gold-deep);">4,500<span style="font-size:20px; font-family:'Noto Sans JP',sans-serif; font-style:normal; margin-left:4px;">台突破</span></p>
+            <p style="font-size:12px; color:var(--ink-soft); margin-top:4px; font-weight:500;">選ばれ続けている信頼と実績</p>
+          </div>
+        </div>
+
+        <!-- ④ CTAボタン -->
+        <div class="anim-fadeup delay-4" style="display:flex; flex-wrap:wrap; gap:12px;">
+          <a href="https://forms.gle/kCiRHFT1jF2dz7NU9" target="_blank" class="btn-gold" style="flex:1; min-width:180px; border-radius:2px;">
+            無料で資料をもらう
+          </a>
+          <a href="#problem" class="btn-outline" style="flex:1; min-width:140px; border-radius:2px;">
+            詳しく見る
+          </a>
+        </div>
+
+      </div>
+
+      <!-- 右カラム: 動画（PCのみ表示） -->
+      <div class="anim-fadeup delay-3" id="hero-video-pc" style="position:relative; display:none;">
+        <div style="position:relative; overflow:hidden; border:3px solid var(--white); box-shadow:0 24px 64px rgba(0,0,0,0.12), 0 0 0 1px rgba(139,105,20,0.15);">
+          <video src="https://github.com/user-attachments/assets/7827a51b-eb60-42f2-8a1e-a0a2d673c4c6"
+                 autoplay muted loop playsinline
+                 style="width:100%; display:block; height:auto; max-height:580px; object-fit:cover;">
+          </video>
+          <div style="position:absolute; bottom:0; left:0; right:0; height:60px; background:linear-gradient(to top, rgba(26,22,18,0.3), transparent);"></div>
+        </div>
+        <div style="position:absolute; top:12px; right:-8px; bottom:-8px; left:8px; border:1px solid rgba(201,152,42,0.3); z-index:-1;"></div>
+      </div>
+
     </div>
+
+  </div>
+
+  <div style="margin-top:48px;" class="divider-gold"></div>
 </section>
 
+<style>
+@media (min-width: 900px) {
+  #hero-cols {
+    flex-direction: row !important;
+    align-items: flex-start;
+    gap: 48px !important;
+  }
+  #hero-left {
+    flex: 1;
+  }
+  #hero-video-mobile {
+    display: none !important;
+  }
+  #hero-video-pc {
+    display: block !important;
+    flex: 1;
+  }
+}
+</style>
 
-<!-- ▼▼▼ キャンペーンバナー追加 ▼▼▼ -->
-<section id="campaign" class="py-6 bg-gradient-to-r from-amber-500 via-yellow-400 to-amber-500 relative overflow-hidden">
-    <div class="absolute inset-0 opacity-10" style="background-image: repeating-linear-gradient(45deg, #fff 0, #fff 1px, transparent 0, transparent 50%); background-size: 12px 12px;"></div>
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="max-w-4xl mx-auto bg-white/95 rounded-2xl shadow-2xl p-6 md:p-8 border-2 border-amber-400 flex flex-col md:flex-row items-center gap-6">
-            <div class="flex-shrink-0 bg-red-600 text-white rounded-xl px-5 py-3 text-center shadow-lg transform -rotate-1">
-                <p class="text-xs font-extrabold tracking-widest uppercase mb-0.5">期間限定</p>
-                <p class="text-2xl font-extrabold leading-tight">このサイト限定</p>
-                <p class="text-xs font-bold mt-0.5">キャンペーン実施中</p>
-            </div>
-            <div class="flex-1 text-center md:text-left">
-                <p class="text-sm font-bold text-red-600 mb-1 tracking-wide">🎁 今だけの特別特典</p>
-                <h3 class="text-xl md:text-2xl font-extrabold text-gray-900 leading-tight mb-2 font-serif">
-                    電極カートリッジ(<span class="line-through text-gray-400">39,600円</span>)が<br class="md:hidden">
-                    <span class="text-red-600 text-3xl md:text-4xl">1本無料</span>でついてくる！
-                </h3>
-                <p class="text-sm text-gray-600">※このサイトからのお申し込みのみ適用。数量限定につき、お早めにどうぞ。</p>
-            </div>
-            <div class="flex-shrink-0">
-                <a href="https://forms.gle/kCiRHFT1jF2dz7NU9" target="_blank" rel="noopener noreferrer"
-                   class="bg-red-600 text-white px-7 py-4 rounded-full font-extrabold text-base shadow-xl hover:bg-red-700 transition-all transform hover:-translate-y-1 hover:shadow-red-300 inline-block whitespace-nowrap">
-                    無料資料請求 →
-                </a>
-            </div>
+<!-- ══════════════════════════════════════
+     CAMPAIGN BANNER
+══════════════════════════════════════ -->
+<section id="campaign" style="padding:32px 0;">
+  <div style="max-width:900px; margin:0 auto; padding:0 20px;">
+    <div style="border:1px solid rgba(201,152,42,0.3); padding:28px 24px; position:relative;">
+      <!-- タグ -->
+      <div style="position:absolute; top:-13px; left:24px; background:var(--red-vivid); color:#fff; font-size:11px; font-weight:700; padding:4px 16px; letter-spacing:0.15em;">
+        期間限定 · このサイト限定
+      </div>
+
+      <div style="display:flex; flex-direction:column; gap:20px; align-items:flex-start;">
+        <div>
+          <p style="font-size:13px; font-weight:700; color:var(--gold-light); letter-spacing:0.1em; margin-bottom:8px;">🎁 今だけの特別特典</p>
+          <h3 class="f-serif" style="font-size:clamp(20px,5vw,28px); font-weight:700; color:#fff; line-height:1.4;">
+            電極カートリッジ
+            <span style="font-size:13px; text-decoration:line-through; color:rgba(255,255,255,0.45); margin:0 4px;">39,600円</span>が<br>
+            <span style="color:var(--gold-light); font-size:clamp(28px,7vw,40px);">1本 無料</span>でついてくる！
+          </h3>
+          <p style="font-size:12px; color:rgba(255,255,255,0.5); margin-top:8px;">※このサイトからのお申し込みのみ適用。数量限定につき、お早めにどうぞ。</p>
         </div>
+        <a href="https://forms.gle/kCiRHFT1jF2dz7NU9" target="_blank" rel="noopener noreferrer" class="btn-gold" style="border-radius:2px; align-self:stretch; text-align:center;">
+          無料資料請求 →
+        </a>
+      </div>
     </div>
+  </div>
 </section>
-<!-- ▲▲▲ キャンペーンバナー追加 ▲▲▲ -->
 
-<section id="problem" class="py-20 bg-white">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold mt-2 font-serif">
-                こんな<span class="text-amber-600">お悩み</span>ございませんか？
-            </h2>
-            <p class="text-gray-500 mt-4 max-w-2xl mx-auto">
-                GOD-CLEANER・GOLDは、サロン経営の<br>様々な課題を瞬時に解決してくれます。
+<style>
+@media(min-width:640px){
+  #campaign > div > div > div { flex-direction: row !important; align-items: center !important; }
+  #campaign > div > div > div > a { align-self: auto !important; flex-shrink: 0; }
+}
+</style>
+
+<!-- ══════════════════════════════════════
+     PROBLEM
+══════════════════════════════════════ -->
+<section id="problem" style="padding:80px 0; background:var(--cream);">
+  <div style="max-width:800px; margin:0 auto; padding:0 20px;">
+
+    <div class="reveal" style="text-align:center; margin-bottom:48px;">
+      <p class="section-tag" style="margin-bottom:12px;">Pain Points</p>
+      <span class="gold-rule" style="margin-bottom:20px;"></span>
+      <h2 class="f-serif" style="font-size:clamp(26px,6vw,40px); font-weight:700; line-height:1.4; color:var(--ink); margin-top:16px;">
+        こんな<span class="text-gold-grad">お悩み</span>ございませんか？
+      </h2>
+      <p style="margin-top:12px; font-size:14px; color:var(--ink-soft); line-height:1.8;">
+        GOD-CLEANER・GOLDは、サロン経営の様々な課題を瞬時に解決します。
+      </p>
+    </div>
+
+    <div style="display:flex; flex-direction:column; gap:12px;">
+      <!-- 各課題カード -->
+      <div class="problem-card reveal" style="padding:20px 24px; display:flex; align-items:flex-start; gap:16px;">
+        <span style="flex-shrink:0; width:32px; height:32px; background:rgba(192,57,43,0.1); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:16px; color:var(--red-vivid); font-weight:900;">×</span>
+        <div>
+          <h3 class="f-serif" style="font-size:18px; font-weight:700; color:var(--ink); margin-bottom:4px;">
+            <span style="background:linear-gradient(transparent 50%, rgba(201,152,42,0.3) 50%); padding:0 2px;">集客コスト</span>が高い
+          </h3>
+          <p style="font-size:13px; color:var(--ink-soft); line-height:1.7;">集客サイト頼みで、新規顧客の獲得コストが高騰している。</p>
+        </div>
+      </div>
+
+      <div class="problem-card reveal" style="padding:20px 24px; display:flex; align-items:flex-start; gap:16px;">
+        <span style="flex-shrink:0; width:32px; height:32px; background:rgba(192,57,43,0.1); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:16px; color:var(--red-vivid); font-weight:900;">×</span>
+        <div>
+          <h3 class="f-serif" style="font-size:18px; font-weight:700; color:var(--ink); margin-bottom:4px;">
+            他店との<span style="background:linear-gradient(transparent 50%, rgba(201,152,42,0.3) 50%); padding:0 2px;">差別化</span>
+          </h3>
+          <p style="font-size:13px; color:var(--ink-soft); line-height:1.7;">既存メニューの差別化が難しく、価格競争に巻き込まれている。</p>
+        </div>
+      </div>
+
+      <div class="problem-card reveal" style="padding:20px 24px; display:flex; align-items:flex-start; gap:16px;">
+        <span style="flex-shrink:0; width:32px; height:32px; background:rgba(192,57,43,0.1); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:16px; color:var(--red-vivid); font-weight:900;">×</span>
+        <div>
+          <h3 class="f-serif" style="font-size:18px; font-weight:700; color:var(--ink); margin-bottom:4px;">
+            <span style="background:linear-gradient(transparent 50%, rgba(201,152,42,0.3) 50%); padding:0 2px;">リピート率</span>の低迷
+          </h3>
+          <p style="font-size:13px; color:var(--ink-soft); line-height:1.7;">お客様のリピート率が上がらず、経営が安定しない。</p>
+        </div>
+      </div>
+
+      <div class="problem-card reveal" style="padding:20px 24px; display:flex; align-items:flex-start; gap:16px;">
+        <span style="flex-shrink:0; width:32px; height:32px; background:rgba(192,57,43,0.1); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:16px; color:var(--red-vivid); font-weight:900;">×</span>
+        <div>
+          <h3 class="f-serif" style="font-size:18px; font-weight:700; color:var(--ink); margin-bottom:4px;">
+            <span style="background:linear-gradient(transparent 50%, rgba(201,152,42,0.3) 50%); padding:0 2px;">インパクト</span>不足
+          </h3>
+          <p style="font-size:13px; color:var(--ink-soft); line-height:1.7;">お客様に感動を与える、他にないインパクトのあるメニューが欲しい。</p>
+        </div>
+      </div>
+
+      <div class="problem-card reveal" style="padding:20px 24px; display:flex; align-items:flex-start; gap:16px;">
+        <span style="flex-shrink:0; width:32px; height:32px; background:rgba(192,57,43,0.1); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:16px; color:var(--red-vivid); font-weight:900;">×</span>
+        <div>
+          <h3 class="f-serif" style="font-size:18px; font-weight:700; color:var(--ink); margin-bottom:4px;">
+            <span style="background:linear-gradient(transparent 50%, rgba(201,152,42,0.3) 50%); padding:0 2px;">技術</span>への依存
+          </h3>
+          <p style="font-size:13px; color:var(--ink-soft); line-height:1.7;">スタッフの技術レベルに依存しない、安定した売上を作りたい。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     SOLUTION (dark)
+══════════════════════════════════════ -->
+<section id="solution" style="padding:80px 0;">
+  <div style="max-width:1100px; margin:0 auto; padding:0 20px;">
+
+    <!-- ヘッダー -->
+    <div class="reveal" style="text-align:center; margin-bottom:48px;">
+      <p class="section-tag" style="color:var(--gold-light); margin-bottom:12px;">Solution</p>
+      <span class="gold-rule" style="margin-bottom:20px;"></span>
+      <h2 class="f-serif" style="font-size:clamp(24px,6vw,40px); font-weight:700; color:#fff; line-height:1.5; margin-top:16px;">
+        答えは、足を入れて<br>見て
+        <span style="color:var(--gold-light);">感動</span>の「非日常体験」
+      </h2>
+      <p style="margin-top:16px; font-size:14px; color:rgba(255,255,255,0.6); line-height:1.9; max-width:600px; margin-left:auto; margin-right:auto;">
+        ゴッドクリーナーとは、電気分解とイオン技術によって老廃物や有害物質を排出するデトックスマシン。<br>
+        その圧倒的な「<strong style="color:var(--gold-light);">効果の見える化</strong>」がお客様の感動を呼び、サロン経営を強力に支援します。
+      </p>
+    </div>
+
+    <!-- メイン画像 -->
+    <div class="reveal" style="margin-bottom:64px; position:relative;">
+      <div style="overflow:hidden; border:2px solid rgba(201,152,42,0.25);">
+        <img src="https://github.com/user-attachments/assets/37401ab6-a784-47be-aeeb-7f74e1a7f9a0" alt="デトックス後の変化" style="width:100%; display:block; max-height:480px; object-fit:cover;">
+      </div>
+      <p style="text-align:center; font-size:12px; color:rgba(255,255,255,0.4); margin-top:10px; letter-spacing:0.05em;">
+        ※実際の写真　※色の変化には個人差があります。
+      </p>
+    </div>
+
+    <!-- 3つのメリット -->
+    <div class="reveal" style="margin-bottom:20px; text-align:center;">
+      <h3 class="f-serif" style="font-size:clamp(20px,5vw,28px); font-weight:700; color:#fff; margin-bottom:8px;">
+        選ばれ続ける理由<br><span style="color:var(--gold-light);">「3つの導入メリット」</span>
+      </h3>
+    </div>
+
+    <div style="display:grid; grid-template-columns:1fr; gap:16px;">
+      <div class="merit-card reveal" style="padding:28px 24px; display:flex; gap:20px; align-items:flex-start;">
+        <div class="big-num" style="font-size:48px; color:rgba(201,152,42,0.4); flex-shrink:0; line-height:1;">01</div>
+        <div>
+          <h4 class="f-serif" style="font-size:18px; font-weight:700; color:var(--gold-light); margin-bottom:8px;">
+            視覚インパクトによる集客
+          </h4>
+          <p style="font-size:13px; color:rgba(255,255,255,0.65); line-height:1.8;">デトックス後の「水の色の変化」が明確な体感となり、お客様の驚きと満足度を高めます。これが口コミとなり、新規客を呼び込みます。</p>
+        </div>
+      </div>
+      <div class="merit-card reveal" style="padding:28px 24px; display:flex; gap:20px; align-items:flex-start;">
+        <div class="big-num" style="font-size:48px; color:rgba(201,152,42,0.4); flex-shrink:0; line-height:1;">02</div>
+        <div>
+          <h4 class="f-serif" style="font-size:18px; font-weight:700; color:var(--gold-light); margin-bottom:8px;">
+            既存メニューとの相乗効果
+          </h4>
+          <p style="font-size:13px; color:rgba(255,255,255,0.65); line-height:1.8;">施術前に利用することで、代謝を促進し、マッサージやエステなどの効果を最大化します。高単価セットメニューに最適です。</p>
+        </div>
+      </div>
+      <div class="merit-card reveal" style="padding:28px 24px; display:flex; gap:20px; align-items:flex-start;">
+        <div class="big-num" style="font-size:48px; color:rgba(201,152,42,0.4); flex-shrink:0; line-height:1;">03</div>
+        <div>
+          <h4 class="f-serif" style="font-size:18px; font-weight:700; color:var(--gold-light); margin-bottom:8px;">
+            技術不要で安定運用
+          </h4>
+          <p style="font-size:13px; color:rgba(255,255,255,0.65); line-height:1.8;">機器を設置するだけなので、専門的な技術や研修は不要。人件費を抑えつつ、安定した収益源を確保できます。</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+@media(min-width:768px){
+  #solution > div > div:last-child { grid-template-columns: repeat(3,1fr) !important; }
+}
+</style>
+
+<!-- ══════════════════════════════════════
+     VOICE
+══════════════════════════════════════ -->
+<section id="voice" style="padding:80px 0; background:var(--cream-dark);">
+  <div style="max-width:1100px; margin:0 auto; padding:0 20px;">
+
+    <div class="reveal" style="text-align:center; margin-bottom:56px;">
+      <p class="section-tag" style="margin-bottom:12px;">Voices</p>
+      <span class="gold-rule" style="margin-bottom:20px;"></span>
+      <h2 class="f-serif" style="font-size:clamp(24px,6vw,38px); font-weight:700; color:var(--ink); margin-top:16px; line-height:1.4;">
+        実際に導入したサロン様から<br>
+        <span class="text-gold-grad" style="font-size:clamp(30px,8vw,52px);">喜びの声</span>が続々
+      </h2>
+    </div>
+
+    <!-- Voice 1 : リピート率 + チャート -->
+    <div style="display:grid; grid-template-columns:1fr; gap:24px; margin-bottom:32px;">
+      <div class="voice-card reveal" style="padding:32px 24px;">
+        <div style="height:240px; overflow:hidden; margin-bottom:24px;">
+          <img src="https://github.com/user-attachments/assets/59c69b1b-409f-4ea5-879f-53fe6c7bde4f" alt="K様サロン" class="img-cover">
+        </div>
+        <div style="display:flex; align-items:flex-start; gap:12px; margin-bottom:16px;">
+          <span class="f-display" style="font-size:60px; color:var(--gold-light); line-height:0.8; margin-top:4px;">"</span>
+          <div>
+            <h3 class="f-serif" style="font-size:20px; font-weight:700; color:var(--ink); margin-bottom:8px;">
+              リピート率が <span class="text-gold-grad" style="font-size:28px;">50%</span> 向上！
+            </h3>
+            <p style="font-size:13px; color:var(--ink-soft); line-height:1.9;">
+              導入後、デトックス後の施術効果アップでお客様の満足度が激変しました。特に「体が軽くなった」という声が多く、施術とのセットメニューが人気に。結果、リピート率が50%も向上しました。
             </p>
+          </div>
         </div>
+        <p style="text-align:right; font-size:12px; color:var(--ink-soft); font-weight:700; letter-spacing:0.05em;">さいたま市・エステサロン経営・K様</p>
+      </div>
 
-        <div class="max-w-3xl mx-auto space-y-6">
-            <div class="bg-white p-6 rounded-lg shadow-lg flex items-center transition-transform hover:scale-105">
-                <span class="text-red-500 font-bold text-3xl mr-5">✘</span>
-                <div>
-                    <h3 class="text-xl font-semibold mb-1">
-                        <span class="bg-amber-200/70 py-1 px-1.5 rounded-sm text-2xl font-bold">集客コスト</span>が高い
-                    </h3>
-                    <p class="text-gray-600">集客サイト頼みで、新規顧客の獲得コストが高騰している。</p>
-                </div>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-lg flex items-center transition-transform hover:scale-105">
-                <span class="text-red-500 font-bold text-3xl mr-5">✘</span>
-                <div>
-                    <h3 class="text-xl font-semibold mb-1">
-                        他店との<span class="bg-amber-200/70 py-1 px-1.5 rounded-sm text-2xl font-bold">差別化</span>
-                    </h3>
-                    <p class="text-gray-600">既存メニューの差別化が難しく、価格競争に巻き込まれている。</p>
-                </div>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-lg flex items-center transition-transform hover:scale-105">
-                <span class="text-red-500 font-bold text-3xl mr-5">✘</span>
-                <div>
-                    <h3 class="text-xl font-semibold mb-1">
-                        <span class="bg-amber-200/70 py-1 px-1.5 rounded-sm text-2xl font-bold">リピート率</span>の低迷
-                    </h3>
-                    <p class="text-gray-600">お客様のリピート率が上がらず、経営が安定しない。</p>
-                </div>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-lg flex items-center transition-transform hover:scale-105">
-                <span class="text-red-500 font-bold text-3xl mr-5">✘</span>
-                <div>
-                    <h3 class="text-xl font-semibold mb-1">
-                        <span class="bg-amber-200/70 py-1 px-1.5 rounded-sm text-2xl font-bold">インパクト</span>不足
-                    </h3>
-                    <p class="text-gray-600">お客様に感動を与える、他にないインパクトのあるメニューが欲しい。</p>
-                </div>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-lg flex items-center transition-transform hover:scale-105">
-                <span class="text-red-500 font-bold text-3xl mr-5">✘</span>
-                <div>
-                    <h3 class="text-xl font-semibold mb-1">
-                        <span class="bg-amber-200/70 py-1 px-1.5 rounded-sm text-2xl font-bold">技術</span>への依存
-                    </h3>
-                    <p class="text-gray-600">スタッフの技術レベルに依存しない、安定した売上を作りたい。</p>
-                </div>
-            </div>
+      <!-- チャート -->
+      <div class="voice-card reveal" style="padding:28px 24px; display:flex; flex-direction:column; justify-content:center;">
+        <h3 class="f-serif" style="font-size:15px; font-weight:700; text-align:center; color:var(--ink); margin-bottom:4px;">K様サロンのリピート率変化</h3>
+        <p style="text-align:center; font-size:12px; color:var(--ink-soft); margin-bottom:20px;">導入前後のリピート率の比較（相対値）</p>
+        <div class="chart-container">
+          <canvas id="repeatRateChart"></canvas>
         </div>
+      </div>
     </div>
-</section>
-        <section id="solution" class="py-20 bg-amber-50/30">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-6 font-serif leading-tight">
-                        答えは、足を入れて<br>見て<strong>感動</strong>の<br>「<span class="text-amber-600">非日常体験</span>」
-                    </h2>
-                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-                        ゴッドクリーナーとは、電気分解とイオン技術によって老廃物や<br>有害物質を排出するデトックスマシン<br>
-                        その圧倒的な「<strong>効果の見える化</strong>」がお客様の感動を呼び、サロン経営を強力に支援します。
-                    </p>
-                </div>
 
-                <div class="w-full max-w-5xl mx-auto mb-16 bg-white rounded-xl shadow-xl overflow-hidden border-4 border-white">
-                    <img src="https://github.com/user-attachments/assets/37401ab6-a784-47be-aeeb-7f74e1a7f9a0" alt="GitHubアセット画像">
-                    <p class="text-center text-sm text-gray-500 py-2 bg-gray-50">※実際の写真　※色の変化には個人差があります。</p>
-                </div>
-                
-<h3 class="text-2xl md:text-3xl font-bold text-center mb-12 font-serif">選ばれ続ける理由<br>「3つの導入メリット」</h3>
-<div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-    <div class="bg-white p-8 rounded-xl shadow-lg border-b-4 border-amber-500 hover:-translate-y-1 transition duration-300">
-        <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center text-xl font-bold mb-4">01</div>
-        <h4 class="text-xl font-bold mb-4 text-gray-800">
-            <span class="bg-amber-200/70 py-1 px-1.5 rounded-sm text-xl font-bold">視覚インパクト</span>による集客
-        </h4>
-        <p class="text-gray-600 leading-relaxed">デトックス後の「水の色の変化」が明確な体感となり、お客様の驚きと満足度を高めます。これが口コミとなり、新規客を呼び込みます。</p>
-    </div>
-    <div class="bg-white p-8 rounded-xl shadow-lg border-b-4 border-amber-500 hover:-translate-y-1 transition duration-300">
-        <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center text-xl font-bold mb-4">02</div>
-        <h4 class="text-xl font-bold mb-4 text-gray-800">
-            <span class="bg-amber-200/70 py-1 px-1.5 rounded-sm text-2xl font-bold">既存メニュー</span>との相乗効果
-        </h4>
-        <p class="text-gray-600 leading-relaxed">施術前に利用することで、代謝を促進し、マッサージやエステなどの効果を最大化します。高単価セットメニューに最適です。</p>
-    </div>
-    <div class="bg-white p-8 rounded-xl shadow-lg border-b-4 border-amber-500 hover:-translate-y-1 transition duration-300">
-        <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center text-xl font-bold mb-4">03</div>
-        <h4 class="text-xl font-bold mb-4 text-gray-800">
-            <span class="bg-amber-200/70 py-1 px-1.5 rounded-sm text-2xl font-bold">技術不要</span>で安定運用
-        </h4>
-        <p class="text-gray-600 leading-relaxed">機器を設置するだけなので、専門的な技術や研修は不要。人件費を抑えつつ、安定した収益源を確保できます。</p>
-    </div>
-</div>
-            </div>
-        </section>
-
-       <section id="voice" class="py-20 bg-white">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 font-serif">
-            実際に導入したサロン様から<br>
-            <span class="text-amber-600 relative inline-block text-5xl font-extrabold">
-                喜びの声
-                <span class="absolute bottom-1 left-0 w-full h-3 bg-amber-200/50 -z-10 transform -skew-x-12"></span>
-            </span>が続々
-        </h2>
-
-        <div class="grid lg:grid-cols-2 gap-12 items-start mb-20">
-            <div class="bg-gray-50 p-8 rounded-2xl shadow-lg border border-gray-100 flex flex-col h-full">
-                <div class="w-full h-64 mb-6 overflow-hidden rounded-xl shadow-md shrink-0">
-                    <img src="https://github.com/user-attachments/assets/59c69b1b-409f-4ea5-879f-53fe6c7bde4f" alt="GitHubアセット画像">
-                </div>
-                
-                <div class="flex-1">
-                    <h3 class="text-xl font-bold mb-3 text-gray-800">「リピート率が  <span class="bg-amber-200/70 py-1 px-1.5 rounded-sm text-2xl font-bold">50%</span>向上!」</h3>
-                    <p class="text-gray-700 text-sm leading-relaxed mb-4">
-                        "導入後、デトックス後の施術効果アップでお客様の満足度が激変しました。特に「体が軽くなった」という声が多く、施術とのセットメニューが人気に。結果、リピート率が50%も向上しました。"
-                    </p>
-                </div>
-                <p class="text-gray-500 font-bold text-sm text-right mt-auto">(さいたま市・エステサロン経営・K様)</p>
-            </div>
-            <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 h-full flex flex-col justify-center">
-                <h3 class="text-lg font-bold text-center mb-4 text-gray-700">K様サロンのリピート率変化</h3>
-                <p class="text-center text-gray-600 mb-6">導入前後のリピート率の比較(相対値)</p>
-                <div class="chart-container w-full">
-                    <canvas id="repeatRateChart"></canvas>
-                </div>
-            </div>
+    <!-- Voice 2・3 -->
+    <div style="display:grid; grid-template-columns:1fr; gap:24px; margin-bottom:56px;">
+      <div class="voice-card reveal" style="padding:28px 24px;">
+        <div style="height:200px; overflow:hidden; margin-bottom:20px;">
+          <img src="https://github.com/user-attachments/assets/fbe90a73-592d-49c4-92f1-451bcb264105" alt="S様サロン" class="img-cover">
         </div>
+        <h3 class="f-serif" style="font-size:18px; font-weight:700; color:var(--ink); margin-bottom:10px;">
+          <span class="text-gold-grad">広告費0</span>で新規客が急増
+        </h3>
+        <p style="font-size:13px; color:var(--ink-soft); line-height:1.9; margin-bottom:16px;">
+          "「水の色が変わるのがスゴイ」と、お客様がご自身のSNSで発信してくれるように。それを見たご友人からの問い合わせが増え、広告費を使わずに新規のお客様がドンドン増えています。"
+        </p>
+        <p style="text-align:right; font-size:12px; color:var(--ink-soft); font-weight:700;">神戸市・リラクゼーションサロン・S様</p>
+      </div>
 
-        <div class="grid md:grid-cols-2 gap-8 mb-16">
-            <div class="bg-gray-50 p-8 rounded-2xl shadow-lg border border-gray-100 flex flex-col">
-                <div class="mb-6 overflow-hidden rounded-xl shadow-sm h-48">
-                    <img src="https://github.com/user-attachments/assets/fbe90a73-592d-49c4-92f1-451bcb264105" alt="GitHubアセット画像">
-                </div>
-                <h3 class="text-xl font-bold mb-3 text-gray-800">「  <span class="bg-amber-200/70 py-1 px-1.5 rounded-sm text-xl font-bold">広告費0で新規客が急増</span>」</h3>
-                <p class="text-gray-700 text-sm leading-relaxed mb-4 flex-grow">
-                    "「水の色が変わるのがスゴイ」と、お客様がご自身のSNSで発信してくれるように。それを見たご友人からの問い合わせが増え、広告費を使わずに新規のお客様がドンドン増えています。"
-                </p>
-                <p class="text-gray-500 font-bold text-right text-sm">(神戸市・リラクゼーションサロン・S様)</p>
-            </div>
-
-            <div class="bg-gray-50 p-8 rounded-2xl shadow-lg border border-gray-100 flex flex-col">
-                <div class="mb-6 overflow-hidden rounded-xl shadow-sm h-64">
-                   <img src="https://github.com/user-attachments/assets/30d7c00e-a3ed-4d8c-a8ca-5fb83a41047b">
-                </div>
-                <h3 class="text-xl font-bold mb-3 text-gray-800">「月売上が <span class="bg-amber-200/70 py-1 px-1.5 rounded-sm text-xl font-bold">130%</span>アップ！」</h3>
-                <p class="text-gray-700 text-sm leading-relaxed mb-4 flex-grow">
-                    "他店にないデトックスメニューを導入したことで、色々なセットメニューを販売でき、客単価が大幅に向上。結果として、導入前と比較して月あたりの売上が130%爆増しました。"
-                </p>
-                <p class="text-gray-500 font-bold text-right text-sm">(名古屋市・整体治療院・I様)</p>
-            </div>
+      <div class="voice-card reveal" style="padding:28px 24px;">
+        <div style="height:200px; overflow:hidden; margin-bottom:20px;">
+          <img src="https://github.com/user-attachments/assets/30d7c00e-a3ed-4d8c-a8ca-5fb83a41047b" alt="I様サロン" class="img-cover">
         </div>
-
-        <div class="flex items-center justify-center">
-            <p class="text-2xl md:text-3xl font-bold text-gray-400 text-center px-4 font-serif leading-relaxed">
-                お客様の<span class="text-amber-600 text-4xl md:text-5xl font-extrabold">驚き</span>が、<br>
-                最高の<span class="text-amber-600 text-4xl md:text-5xl font-extrabold">口コミ</span>を生む
-            </p>
-        </div>
+        <h3 class="f-serif" style="font-size:18px; font-weight:700; color:var(--ink); margin-bottom:10px;">
+          月売上が <span class="text-gold-grad">130%</span> アップ！
+        </h3>
+        <p style="font-size:13px; color:var(--ink-soft); line-height:1.9; margin-bottom:16px;">
+          "他店にないデトックスメニューを導入したことで、色々なセットメニューを販売でき、客単価が大幅に向上。結果として、導入前と比較して月あたりの売上が130%爆増しました。"
+        </p>
+        <p style="text-align:right; font-size:12px; color:var(--ink-soft); font-weight:700;">名古屋市・整体治療院・I様</p>
+      </div>
     </div>
+
+    <!-- キャッチ -->
+    <div class="reveal" style="text-align:center;">
+      <p class="f-serif" style="font-size:clamp(20px,5vw,32px); font-weight:700; color:var(--ink-soft); line-height:1.8;">
+        お客様の<span class="text-gold-grad" style="font-size:clamp(28px,7vw,48px);">驚き</span>が、<br>
+        最高の<span class="text-gold-grad" style="font-size:clamp(28px,7vw,48px);">口コミ</span>を生む
+      </p>
+    </div>
+
+  </div>
 </section>
 
-        <section id="offer" class="py-20 bg-amber-50/50">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-2xl md:text-4xl font-bold text-center mb-16 font-serif">
-                    導入を成功に導く、<br class="md:hidden">
-                    メーカー公式の<span class="text-amber-600">徹底サポート</span>
-                </h2>
-                <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-16">
-                    <div class="bg-white p-8 rounded-xl shadow-lg text-center border-t-4 border-amber-500">
-    <div class="h-48 w-full flex items-center justify-center mb-6 bg-gray-100 gap-2 md:gap-4 overflow-hidden">
-        <img src="https://github.com/user-attachments/assets/18c39241-93b3-4a1f-a0f5-fac361f7804b" alt="GitHubアセット画像" class="max-h-32 md:h-full w-auto max-w-[45%] md:max-w-none object-contain">
-        <img src="https://github.com/user-attachments/assets/0dc99e7c-2492-408c-92c0-b8158565eeb6" alt="GitHubアセット画像" class="max-h-32 md:h-full w-auto max-w-[45%] md:max-w-none object-contain">
+<style>
+@media(min-width:900px){
+  #voice > div > div:nth-child(3) { grid-template-columns: 1fr 1fr !important; }
+  #voice > div > div:nth-child(4) { grid-template-columns: 1fr 1fr !important; }
+}
+</style>
+
+<!-- ══════════════════════════════════════
+     SUPPORT / OFFER
+══════════════════════════════════════ -->
+<section id="offer" style="padding:80px 0; background:var(--ink);">
+  <div style="max-width:1000px; margin:0 auto; padding:0 20px;">
+
+    <div class="reveal" style="text-align:center; margin-bottom:48px;">
+      <p class="section-tag" style="color:var(--gold-light); margin-bottom:12px;">Support</p>
+      <span class="gold-rule" style="margin-bottom:20px;"></span>
+      <h2 class="f-serif" style="font-size:clamp(22px,5vw,36px); font-weight:700; color:#fff; margin-top:16px; line-height:1.5;">
+        導入を成功に導く、<br>
+        メーカー公式の<span style="color:var(--gold-light);">徹底サポート</span>
+      </h2>
     </div>
-    <h3 class="text-2xl font-bold mb-3 text-gray-800">特典1：経営ノウハウ資料</h3>
-    <p class="text-gray-600">「取扱説明書」「経営マニュアル」「顧客対応マニュアル」など、売上最大化のための<span class="font-bold text-amber-600">資料・販促ツール</span>を無料進呈。</p>
-</div>
-                    <div class="bg-white p-8 rounded-xl shadow-lg text-center border-t-4 border-amber-500">
-    <div class="h-48 w-full flex items-center justify-center mb-6 bg-gray-100 rounded-lg overflow-hidden">
-        <img src="https://github.com/user-attachments/assets/374fc2f9-03f4-41b3-aef3-f9337b70b332" alt="GitHubアセット画像" class="w-full h-full object-cover">
+
+    <div style="display:grid; grid-template-columns:1fr; gap:20px; margin-bottom:64px;">
+      <!-- 特典1 -->
+      <div class="reveal" style="background:rgba(255,255,255,0.04); border:1px solid rgba(201,152,42,0.2); padding:28px 24px;">
+        <div style="display:flex; gap:16px; align-items:center; margin-bottom:16px; background:rgba(0,0,0,0.2); padding:4px; overflow:hidden; height:160px;">
+          <img src="https://github.com/user-attachments/assets/18c39241-93b3-4a1f-a0f5-fac361f7804b" alt="経営マニュアル" style="height:100%; width:50%; object-fit:contain;">
+          <img src="https://github.com/user-attachments/assets/0dc99e7c-2492-408c-92c0-b8158565eeb6" alt="販促ツール" style="height:100%; width:50%; object-fit:contain;">
+        </div>
+        <div style="display:flex; align-items:center; gap:12px; margin-bottom:10px;">
+          <span style="width:28px; height:28px; background:var(--gold-deep); display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:700; color:#fff; flex-shrink:0;">01</span>
+          <h3 class="f-serif" style="font-size:18px; font-weight:700; color:#fff;">経営ノウハウ資料</h3>
+        </div>
+        <p style="font-size:13px; color:rgba(255,255,255,0.6); line-height:1.8;">「取扱説明書」「経営マニュアル」「顧客対応マニュアル」など、売上最大化のための<span style="color:var(--gold-light); font-weight:700;">資料・販促ツール</span>を無料進呈。</p>
+      </div>
+
+      <!-- 特典2 -->
+      <div class="reveal" style="background:rgba(255,255,255,0.04); border:1px solid rgba(201,152,42,0.2); padding:28px 24px;">
+        <div style="overflow:hidden; height:160px; margin-bottom:16px; background:rgba(0,0,0,0.2);">
+          <img src="https://github.com/user-attachments/assets/374fc2f9-03f4-41b3-aef3-f9337b70b332" alt="アフターサポート" style="width:100%; height:100%; object-fit:cover; display:block;">
+        </div>
+        <div style="display:flex; align-items:center; gap:12px; margin-bottom:10px;">
+          <span style="width:28px; height:28px; background:var(--gold-deep); display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:700; color:#fff; flex-shrink:0;">02</span>
+          <h3 class="f-serif" style="font-size:18px; font-weight:700; color:#fff;">アフターサポート</h3>
+        </div>
+        <p style="font-size:13px; color:rgba(255,255,255,0.6); line-height:1.8;">機器の故障時も安心！ 代替機の無償貸与と、1年間の無償修理保証、トラブル時のサポートを提供。</p>
+      </div>
     </div>
-    <h3 class="text-2xl font-bold mb-3 text-gray-800">特典2：アフターサポート</h3>
-    <p class="text-gray-600">機器の故障時も安心！ 代替機の無償貸与と、1年間の無償修理保証、トラブル時のサポートを提供。</p>
-</div>
-                </div>
-                
-                <div id="media-achievements" class="max-w-4xl mx-auto bg-white p-10 rounded-2xl shadow-xl border border-amber-100 mb-20">
-    <h3 class="text-2xl font-bold text-center mb-8 text-gray-800 font-serif">
+
+  </div>
+</section>
+
+<style>
+@media(min-width:768px){
+  #offer > div > div:nth-child(3) { grid-template-columns: 1fr 1fr !important; }
+}
+</style>
+
+<!-- ══════════════════════════════════════
+     MEDIA
+══════════════════════════════════════ -->
+<section id="media-achievements" style="padding:80px 0; background:var(--cream);">
+  <div style="max-width:960px; margin:0 auto; padding:0 20px;">
+
+    <div class="reveal" style="text-align:center; margin-bottom:40px;">
+      <p class="section-tag" style="margin-bottom:12px;">Media</p>
+      <span class="gold-rule" style="margin-bottom:20px;"></span>
+      <h2 class="f-serif" style="font-size:clamp(22px,5vw,34px); font-weight:700; color:var(--ink); margin-top:16px;">
         📺 メディア放映実績
-    </h3>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-
-        <div class="p-2 border-b border-gray-100">
-            <p class="font-extrabold text-amber-600 text-lg mb-0.5">テレビ東京</p>
-            <p class="font-bold text-gray-700 text-xs">ワールドビジネスサテライト</p>
-            <p class="text-xs text-gray-500">最新トレンド情報として紹介</p>
-        </div>
-
-        <div class="p-2 border-b border-gray-100">
-            <p class="font-extrabold text-amber-600 text-lg mb-0.5">日本テレビ</p>
-            <p class="font-bold text-gray-700 text-sm">おネエ★MANS</p>
-            <p class="text-xs text-gray-500">美容家IKKOが凄いマシンと紹介</p>
-        </div>
-
-        <div class="p-2 border-b border-gray-100">
-            <p class="font-extrabold text-amber-600 text-lg mb-0.5">TBS</p>
-            <p class="font-bold text-gray-700 text-sm">恋するハニカミ！</p>
-            <p class="text-xs text-gray-500">黄川田将也と和希沙也が紹介</p>
-        </div>
-
-        <div class="p-2 border-b border-gray-100">
-            <p class="font-extrabold text-amber-600 text-lg mb-0.5">フジテレビ</p>
-            <p class="font-bold text-gray-700 text-sm">バニラ気分！</p>
-            <p class="text-xs text-gray-500">ほしのあきが紹介</p>
-        </div>
-
-        <div class="p-2 border-b border-gray-100">
-            <p class="font-extrabold text-amber-600 text-lg mb-0.5">SKY PerfecTV</p>
-            <p class="font-bold text-gray-700 text-sm">日テレG＋おとな館</p>
-            <p class="text-xs text-gray-500">最新トレンド情報として紹介</p>
-        </div>
-        
-        <div class="p-2 border-b border-gray-100">
-            <p class="font-extrabold text-amber-600 text-lg mb-0.5">VoCE</p>
-            <p class="font-bold text-gray-700 text-sm">美容雑誌掲載</p>
-        </div>
-        
-        <div class="p-2 border-b border-gray-100">
-            <p class="font-extrabold text-amber-600 text-lg mb-0.5">TV大阪</p>
-            <p class="font-bold text-gray-700 text-sm">マーサ&ハニー</p>
-            <p class="text-xs text-gray-500">展示会での体験を紹介</p>
-        </div>
-        
-        <div class="p-2 border-b border-gray-100">
-            <p class="font-extrabold text-amber-600 text-base mb-0.5">MBS毎日放送</p>
-            <p class="font-bold text-gray-700 text-sm">#ミスコレ</p>
-            <p class="text-xs text-gray-500">鈴木奈々さんが驚きの体験</p>
-        </div>
-        
-        <div class="p-2 col-span-2 md:col-span-4 mt-4">
-        </div>
+      </h2>
     </div>
+
+    <div class="reveal" style="display:grid; grid-template-columns:repeat(2,1fr); gap:10px;">
+      <div class="media-item" style="padding:16px 12px; text-align:center;">
+        <p style="font-weight:800; color:var(--gold-deep); font-size:15px; margin-bottom:4px;">テレビ東京</p>
+        <p style="font-size:11px; font-weight:700; color:var(--ink); margin-bottom:2px;">ワールドビジネスサテライト</p>
+        <p style="font-size:10px; color:var(--ink-soft);">最新トレンド情報として紹介</p>
+      </div>
+      <div class="media-item" style="padding:16px 12px; text-align:center;">
+        <p style="font-weight:800; color:var(--gold-deep); font-size:15px; margin-bottom:4px;">日本テレビ</p>
+        <p style="font-size:11px; font-weight:700; color:var(--ink); margin-bottom:2px;">おネエ★MANS</p>
+        <p style="font-size:10px; color:var(--ink-soft);">美容家IKKOが凄いマシンと紹介</p>
+      </div>
+      <div class="media-item" style="padding:16px 12px; text-align:center;">
+        <p style="font-weight:800; color:var(--gold-deep); font-size:15px; margin-bottom:4px;">TBS</p>
+        <p style="font-size:11px; font-weight:700; color:var(--ink); margin-bottom:2px;">恋するハニカミ！</p>
+        <p style="font-size:10px; color:var(--ink-soft);">黄川田将也と和希沙也が紹介</p>
+      </div>
+      <div class="media-item" style="padding:16px 12px; text-align:center;">
+        <p style="font-weight:800; color:var(--gold-deep); font-size:15px; margin-bottom:4px;">フジテレビ</p>
+        <p style="font-size:11px; font-weight:700; color:var(--ink); margin-bottom:2px;">バニラ気分！</p>
+        <p style="font-size:10px; color:var(--ink-soft);">ほしのあきが紹介</p>
+      </div>
+      <div class="media-item" style="padding:16px 12px; text-align:center;">
+        <p style="font-weight:800; color:var(--gold-deep); font-size:14px; margin-bottom:4px;">SKY PerfecTV</p>
+        <p style="font-size:11px; font-weight:700; color:var(--ink); margin-bottom:2px;">日テレG＋おとな館</p>
+        <p style="font-size:10px; color:var(--ink-soft);">最新トレンド情報として紹介</p>
+      </div>
+      <div class="media-item" style="padding:16px 12px; text-align:center;">
+        <p style="font-weight:800; color:var(--gold-deep); font-size:15px; margin-bottom:4px;">VoCE</p>
+        <p style="font-size:11px; font-weight:700; color:var(--ink); margin-bottom:2px;">美容雑誌掲載</p>
+        <p style="font-size:10px; color:var(--ink-soft);"> </p>
+      </div>
+      <div class="media-item" style="padding:16px 12px; text-align:center;">
+        <p style="font-weight:800; color:var(--gold-deep); font-size:15px; margin-bottom:4px;">TV大阪</p>
+        <p style="font-size:11px; font-weight:700; color:var(--ink); margin-bottom:2px;">マーサ&ハニー</p>
+        <p style="font-size:10px; color:var(--ink-soft);">展示会での体験を紹介</p>
+      </div>
+      <div class="media-item" style="padding:16px 12px; text-align:center;">
+        <p style="font-weight:800; color:var(--gold-deep); font-size:14px; margin-bottom:4px;">MBS毎日放送</p>
+        <p style="font-size:11px; font-weight:700; color:var(--ink); margin-bottom:2px;">#ミスコレ</p>
+        <p style="font-size:10px; color:var(--ink-soft);">鈴木奈々さんが驚きの体験</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     PRICE
+══════════════════════════════════════ -->
+<section id="price" style="padding:80px 0; background:var(--cream-dark); scroll-margin-top:64px;">
+  <div style="max-width:960px; margin:0 auto; padding:0 20px;">
+
+    <div class="reveal" style="text-align:center; margin-bottom:48px;">
+      <p class="section-tag" style="margin-bottom:12px;">Plans & Pricing</p>
+      <span class="gold-rule" style="margin-bottom:20px;"></span>
+      <h2 class="f-serif" style="font-size:clamp(24px,6vw,38px); font-weight:700; color:var(--ink); margin-top:16px;">
+        導入プラン・価格
+      </h2>
+    </div>
+
+    <div style="display:grid; grid-template-columns:1fr; gap:24px;">
+      <!-- サロン仕様タイプ -->
+      <div class="price-card reveal" style="position:relative;">
+        <!-- LIMITED badge -->
+        <div style="position:absolute; top:16px; right:16px; background:var(--red-vivid); color:#fff; font-size:10px; font-weight:700; padding:4px 12px; z-index:2; letter-spacing:0.1em; animation:badgePulse 2.5s ease-in-out infinite;">
+          🎁 限定特典あり
+        </div>
+
+        <div style="background:linear-gradient(135deg, var(--ink) 0%, var(--ink-mid) 100%); padding:20px 24px;">
+          <p style="font-size:11px; letter-spacing:0.2em; color:var(--gold-light); margin-bottom:4px; text-transform:uppercase;">Salon Type</p>
+          <h3 class="f-serif" style="font-size:22px; font-weight:700; color:#fff;">サロン仕様タイプ</h3>
+        </div>
+
+        <div style="padding:28px 24px;">
+          <p style="font-size:12px; color:var(--ink-soft); font-weight:700; margin-bottom:12px; letter-spacing:0.05em;">【希望小売価格】改良型ヒーター + 電極×2本付</p>
+
+          <div style="margin-bottom:4px;">
+            <span class="big-num" style="font-size:52px; color:var(--gold-deep);">584,000</span>
+            <span style="font-size:18px; font-weight:700; color:var(--ink);">円</span>
+            <span style="font-size:12px; color:var(--ink-soft); margin-left:4px;">(税別)</span>
+          </div>
+          <p style="font-size:13px; color:var(--ink-soft); margin-bottom:20px;">(税込 642,400円)</p>
+
+          <!-- キャンペーン -->
+          <div style="background:linear-gradient(135deg, #fff5f5, #fff8ee); border:1.5px solid var(--red-vivid); padding:16px 20px; margin-bottom:20px;">
+            <p style="font-size:10px; font-weight:700; color:var(--red-vivid); letter-spacing:0.15em; text-align:center; margin-bottom:10px; text-transform:uppercase;">🎉 このサイト限定キャンペーン</p>
+            <div style="display:flex; align-items:center; justify-content:space-between; gap:12px;">
+              <div>
+                <p style="font-size:14px; font-weight:700; color:var(--ink);">電極カートリッジ 1本</p>
+                <p style="font-size:11px; color:var(--ink-soft);">通常価格 <span style="text-decoration:line-through;">39,600円</span></p>
+              </div>
+              <div style="background:var(--red-vivid); color:#fff; font-size:18px; font-weight:800; padding:8px 16px; flex-shrink:0;">
+                無料！
+              </div>
+            </div>
+          </div>
+
+          <!-- 内訳 -->
+          <div style="background:var(--gold-shine); border:1px solid rgba(139,105,20,0.15); padding:16px 20px;">
+            <p style="font-size:11px; font-weight:700; color:var(--gold-deep); letter-spacing:0.1em; margin-bottom:10px; text-transform:uppercase;">内訳 (税別)</p>
+            <ul style="list-style:none; font-size:13px; color:var(--ink-soft); line-height:2.2;">
+              <li>— 本体 512,000円</li>
+              <li>— 電極カートリッジ（付属品+予備）<br>&nbsp;&nbsp;&nbsp;36,000円×2本 = 72,000円</li>
+              <li>— 販促ツール一式（店内POP・説明ファイル）</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 個人仕様タイプ -->
+      <div class="price-card reveal" style="position:relative;">
+        <div style="position:absolute; top:16px; right:16px; background:var(--red-vivid); color:#fff; font-size:10px; font-weight:700; padding:4px 12px; z-index:2; letter-spacing:0.1em; animation:badgePulse 2.5s ease-in-out infinite;">
+          🎁 限定特典あり
+        </div>
+
+        <div style="background:linear-gradient(135deg, #2D1F4E 0%, #3D2B5E 100%); padding:20px 24px;">
+          <p style="font-size:11px; letter-spacing:0.2em; color:var(--gold-light); margin-bottom:4px; text-transform:uppercase;">Personal Type</p>
+          <h3 class="f-serif" style="font-size:22px; font-weight:700; color:#fff;">個人仕様タイプ</h3>
+        </div>
+
+        <div style="padding:28px 24px;">
+          <p style="font-size:12px; color:var(--ink-soft); font-weight:700; margin-bottom:12px; letter-spacing:0.05em;">【希望小売価格】改良型ヒーター + 電極×1本付</p>
+
+          <div style="margin-bottom:4px;">
+            <span class="big-num" style="font-size:52px; color:var(--gold-deep);">548,000</span>
+            <span style="font-size:18px; font-weight:700; color:var(--ink);">円</span>
+            <span style="font-size:12px; color:var(--ink-soft); margin-left:4px;">(税別)</span>
+          </div>
+          <p style="font-size:13px; color:var(--ink-soft); margin-bottom:20px;">(税込 602,800円)</p>
+
+          <div style="background:linear-gradient(135deg, #fff5f5, #fff8ee); border:1.5px solid var(--red-vivid); padding:16px 20px; margin-bottom:20px;">
+            <p style="font-size:10px; font-weight:700; color:var(--red-vivid); letter-spacing:0.15em; text-align:center; margin-bottom:10px; text-transform:uppercase;">🎉 このサイト限定キャンペーン</p>
+            <div style="display:flex; align-items:center; justify-content:space-between; gap:12px;">
+              <div>
+                <p style="font-size:14px; font-weight:700; color:var(--ink);">電極カートリッジ 1本</p>
+                <p style="font-size:11px; color:var(--ink-soft);">通常価格 <span style="text-decoration:line-through;">39,600円</span></p>
+              </div>
+              <div style="background:var(--red-vivid); color:#fff; font-size:18px; font-weight:800; padding:8px 16px; flex-shrink:0;">
+                無料！
+              </div>
+            </div>
+          </div>
+
+          <div style="background:var(--gold-shine); border:1px solid rgba(139,105,20,0.15); padding:16px 20px;">
+            <p style="font-size:11px; font-weight:700; color:var(--gold-deep); letter-spacing:0.1em; margin-bottom:10px; text-transform:uppercase;">内訳 (税別)</p>
+            <ul style="list-style:none; font-size:13px; color:var(--ink-soft); line-height:2.2;">
+              <li>— 本体 512,000円</li>
+              <li>— 電極カートリッジ（付属品）36,000円</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+@media(min-width:768px){
+  #price > div > div:last-child { grid-template-columns: 1fr 1fr !important; }
+}
+</style>
+
+<!-- ══════════════════════════════════════
+     CONTACT (dark)
+══════════════════════════════════════ -->
+<section id="contact" style="padding:80px 0;">
+  <div style="max-width:800px; margin:0 auto; padding:0 20px;">
+
+    <div class="reveal" style="text-align:center; margin-bottom:48px;">
+      <p class="section-tag" style="color:var(--gold-light); margin-bottom:12px;">Contact</p>
+      <span class="gold-rule" style="margin-bottom:20px;"></span>
+      <h2 class="f-serif" style="font-size:clamp(24px,6vw,38px); font-weight:700; color:#fff; margin-top:16px;">
+        まずは詳細資料を入手
+      </h2>
+      <p style="margin-top:12px; font-size:14px; color:rgba(255,255,255,0.55); line-height:1.8;">
+        資料請求、ご注文は以下のフォームよりお願いいたします。
+      </p>
+    </div>
+
+    <div class="reveal" style="background:rgba(255,255,255,0.04); border:1px solid rgba(201,152,42,0.2); padding:8px; overflow:hidden;">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd5_v4oBus47OHPkvdEqTovSrhM-NyR2Lx6-v5TfNu7qC2-kA/viewform?embedded=true"
+              style="width:100%; display:block; border:none; background:#fff;"
+              height="1763"
+              marginheight="0"
+              marginwidth="0">
+        読み込んでいます...
+      </iframe>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     FOOTER
+══════════════════════════════════════ -->
+<footer style="padding:56px 20px 32px;">
+  <div style="max-width:800px; margin:0 auto;">
+    <!-- ロゴ -->
+    <div style="text-align:center; margin-bottom:40px;">
+      <p style="font-size:10px; color:rgba(255,255,255,0.3); letter-spacing:0.12em; margin-bottom:4px;">株式会社マインドフィットネス</p>
+      <p class="f-serif" style="font-size:22px; font-weight:700; color:var(--gold-light); letter-spacing:0.06em;">GOD-CLEANER・GOLD</p>
+    </div>
+
+    <div class="divider-gold" style="margin-bottom:40px;"></div>
+
+    <!-- 連絡先 -->
+    <div style="display:grid; grid-template-columns:1fr; gap:24px; margin-bottom:40px; text-align:center;">
+      <div>
+        <p style="font-size:11px; letter-spacing:0.15em; color:rgba(255,255,255,0.4); margin-bottom:8px; text-transform:uppercase;">Tel</p>
+        <a href="tel:0120-977-801" class="f-serif" style="font-size:26px; font-weight:700; color:var(--gold-light); text-decoration:none; display:block;">0120-977-801</a>
+        <p style="font-size:11px; color:rgba(255,255,255,0.35); margin-top:4px;">受付時間: 平日 9:00〜17:00</p>
+      </div>
+      <div>
+        <p style="font-size:11px; letter-spacing:0.15em; color:rgba(255,255,255,0.4); margin-bottom:8px; text-transform:uppercase;">LINE</p>
+        <a href="https://line.me/ti/p/HL4WuSjHwA" target="_blank" rel="noopener noreferrer"
+           style="display:inline-flex; align-items:center; gap:8px; background:#06C755; color:#fff; font-size:14px; font-weight:700; padding:12px 28px; text-decoration:none; border-radius:2px; transition:opacity 0.2s;"
+           onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 10.304c0-5.369-5.383-9.738-12-9.738-6.616 0-12 4.369-12 9.738 0 4.819 4.276 8.845 10.048 9.605.391.084.925.258 1.06.592.121.303.079.778.039 1.085l-.171 1.027c-.053.303-.242 1.186 1.039.647 1.281-.54 6.911-4.069 9.428-6.967 1.739-1.907 2.557-3.843 2.557-5.989z"/></svg>
+          LINEで問い合わせる
+        </a>
+      </div>
+    </div>
+
+    <div class="divider-gold" style="margin-bottom:24px;"></div>
+
+    <div style="display:flex; justify-content:center; gap:32px; margin-bottom:20px;">
+      <button onclick="document.getElementById('privacyModal').classList.add('active')"
+              style="background:none; border:none; font-size:13px; color:rgba(255,255,255,0.4); cursor:pointer; transition:color 0.2s; padding:0;"
+              onmouseover="this.style.color='var(--gold-light)'" onmouseout="this.style.color='rgba(255,255,255,0.4)'">プライバシーポリシー</button>
+      <a href="https://mindf.jp/" style="font-size:13px; color:rgba(255,255,255,0.4); text-decoration:none; transition:color 0.2s;"
+         onmouseover="this.style.color='var(--gold-light)'" onmouseout="this.style.color='rgba(255,255,255,0.4)'">会社概要</a>
+    </div>
+    <p style="text-align:center; font-size:11px; color:rgba(255,255,255,0.2); letter-spacing:0.05em;">
+      &copy; 2025 Mind Fitness Co,Ltd. All Rights Reserved.
+    </p>
+  </div>
+</footer>
+
+<style>
+@media(min-width:640px){
+  footer > div > div:nth-child(3) { grid-template-columns: 1fr 1fr !important; }
+}
+</style>
+
+<!-- ══════════════════════════════════════
+     PRIVACY MODAL
+══════════════════════════════════════ -->
+<div id="privacyModal" class="modal" style="position:fixed; inset:0; z-index:200; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,0.7); backdrop-filter:blur(8px); padding:20px;">
+  <div style="background:var(--cream); max-width:600px; width:100%; max-height:80vh; overflow-y:auto; border:1px solid rgba(139,105,20,0.2);">
+    <div style="padding:20px 24px; border-bottom:1px solid rgba(139,105,20,0.15); display:flex; justify-content:space-between; align-items:center; position:sticky; top:0; background:var(--cream);">
+      <h3 class="f-serif" style="font-size:18px; font-weight:700; color:var(--ink);">プライバシーポリシー</h3>
+      <button onclick="document.getElementById('privacyModal').classList.remove('active')"
+              style="background:none; border:none; font-size:24px; color:var(--ink-soft); cursor:pointer; line-height:1;">&times;</button>
+    </div>
+    <div style="padding:24px; font-size:13px; color:var(--ink-soft); line-height:1.9;">
+      <p style="margin-bottom:16px;">株式会社マインドフィットネス（以下、「当社」といいます。）は、本ウェブサイト上で提供するサービスにおける、ユーザーの個人情報の取扱いについて、以下のとおりプライバシーポリシー（以下、「本ポリシー」といいます。）を定めます。</p>
+      <h4 style="font-weight:700; color:var(--ink); margin-bottom:8px; margin-top:20px;">1. 個人情報の収集について</h4>
+      <p style="margin-bottom:16px;">当社は、お問い合わせや資料請求の際に、氏名、住所、電話番号、メールアドレスなどの個人情報をお尋ねすることがあります。</p>
+      <h4 style="font-weight:700; color:var(--ink); margin-bottom:8px; margin-top:20px;">2. 個人情報の利用目的</h4>
+      <p style="margin-bottom:16px;">収集した個人情報は、お問い合わせへの回答、資料の送付、および当社のサービス向上のために利用いたします。</p>
+      <h4 style="font-weight:700; color:var(--ink); margin-bottom:8px; margin-top:20px;">3. 個人情報の第三者提供</h4>
+      <p style="margin-bottom:16px;">当社は、法令に基づく場合を除き、あらかじめユーザーの同意を得ることなく、第三者に個人情報を提供することはありません。</p>
+      <h4 style="font-weight:700; color:var(--ink); margin-bottom:8px; margin-top:20px;">4. 個人情報の管理</h4>
+      <p style="margin-bottom:16px;">当社は、個人情報の漏洩、滅失またはき損の防止その他の個人情報の安全管理のために必要かつ適切な措置を講じます。</p>
+      <h4 style="font-weight:700; color:var(--ink); margin-bottom:8px; margin-top:20px;">5. お問い合わせ窓口</h4>
+      <p>本ポリシーに関するお問い合わせは、下記までお願いいたします。<br>株式会社マインドフィットネス<br>電話番号：0120-977-801</p>
+    </div>
+    <div style="padding:16px 24px; background:var(--cream-dark); text-align:center;">
+      <button onclick="document.getElementById('privacyModal').classList.remove('active')"
+              class="btn-gold" style="padding:10px 32px; border-radius:2px;">閉じる</button>
+    </div>
+  </div>
 </div>
 
-                <div id="price" class="scroll-mt-24">
-                    <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 font-serif">
-                        導入プラン・価格
-                    </h2>
-                    <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                        <div class="bg-white rounded-2xl shadow-xl overflow-hidden border-2 border-rose-400 transform hover:-translate-y-1 transition duration-300 relative">
-                            <!-- キャンペーンリボン -->
-                            <div class="absolute top-4 right-4 bg-red-600 text-white text-xs font-extrabold px-3 py-1.5 rounded-full shadow-lg z-10" style="animation: badgePulse 2.5s ease-in-out infinite;">
-                                🎁 限定特典あり
-                            </div>
-                            <div class="bg-rose-600 text-white py-4 text-center">
-                                <h3 class="text-xl font-bold tracking-wide">サロン仕様タイプ</h3>
-                            </div>
-                            <div class="p-8 text-center">
-                                <p class="text-sm text-gray-500 mb-2 font-bold">【希望小売価格】<br>改良型ヒーター + 電極×2本付</p>
-                                <div class="mb-4">
-                                    <span class="text-4xl md:text-5xl font-bold text-rose-600">584,000</span>
-                                    <span class="text-xl font-bold text-gray-700">円</span>
-                                    <span class="text-sm text-gray-500">(税別)</span>
-                                </div>
-                                <p class="text-gray-500 text-sm mb-4">(税込 642,400円)</p>
+<!-- ══════════════════════════════════════
+     SCRIPTS
+══════════════════════════════════════ -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
 
-                                <!-- キャンペーン特典ボックス -->
-                                <div class="bg-gradient-to-r from-red-50 to-amber-50 border-2 border-red-400 rounded-xl p-4 mb-6 text-left">
-                                    <p class="text-xs font-extrabold text-red-600 text-center mb-2 tracking-widest uppercase">🎉 このサイト限定キャンペーン</p>
-                                    <div class="flex items-center justify-between">
-                                        <div>
-                                            <p class="text-sm font-bold text-gray-800">電極カートリッジ 1本</p>
-                                            <p class="text-xs text-gray-500">通常価格 <span class="line-through">39,600円</span></p>
-                                        </div>
-                                        <div class="bg-red-600 text-white font-extrabold text-xl px-4 py-1.5 rounded-lg shadow-md flex-shrink-0 ml-2">
-                                            無料！
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="bg-rose-50 rounded-lg p-5 text-left">
-                                    <p class="text-xs text-rose-500 font-bold text-center mb-3">内訳 (税別)</p>
-                                    <ul class="text-sm text-gray-700 space-y-2">
-                                        <li class="flex items-start">
-                                            <span class="text-rose-400 mr-2">●</span>本体 512,000円
-                                        </li>
-                                        <li class="flex items-start">
-                                            <span class="text-rose-400 mr-2">●</span>電極カートリッジ (付属品+予備)<br>36,000円×2本 = 72,000円
-                                        </li>
-                                        <li class="flex items-start">
-                                            <span class="text-rose-400 mr-2">●</span>販促ツール一式 (店内POP・説明ファイル)
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+  // ── Chart.js ──
+  const ctx = document.getElementById('repeatRateChart').getContext('2d');
+  const gradBefore = ctx.createLinearGradient(0,0,0,280);
+  gradBefore.addColorStop(0,'#d1d5db');
+  gradBefore.addColorStop(1,'#9ca3af');
+  const gradAfter = ctx.createLinearGradient(0,0,0,280);
+  gradAfter.addColorStop(0,'#E8C97A');
+  gradAfter.addColorStop(1,'#8B6914');
 
-                        <div class="bg-white rounded-2xl shadow-xl overflow-hidden border-2 border-pink-400 transform hover:-translate-y-1 transition duration-300 relative">
-                            <!-- キャンペーンリボン -->
-                            <div class="absolute top-4 right-4 bg-red-600 text-white text-xs font-extrabold px-3 py-1.5 rounded-full shadow-lg z-10" style="animation: badgePulse 2.5s ease-in-out infinite;">
-                                🎁 限定特典あり
-                            </div>
-                            <div class="bg-pink-500 text-white py-4 text-center">
-                                <h3 class="text-xl font-bold tracking-wide">個人仕様タイプ</h3>
-                            </div>
-                            <div class="p-8 text-center">
-                                <p class="text-sm text-gray-500 mb-2 font-bold">【希望小売価格】<br>改良型ヒーター + 電極×1本付</p>
-                                <div class="mb-4">
-                                    <span class="text-4xl md:text-5xl font-bold text-pink-600">548,000</span>
-                                    <span class="text-xl font-bold text-gray-700">円</span>
-                                    <span class="text-sm text-gray-500">(税別)</span>
-                                </div>
-                                <p class="text-gray-500 text-sm mb-4">(税込 602,800円)</p>
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['導入前', '導入後'],
+      datasets: [{
+        label: 'リピート率 (相対値)',
+        data: [100, 150],
+        backgroundColor: [gradBefore, gradAfter],
+        borderWidth: 0,
+        borderRadius: 4,
+        barPercentage: 0.55
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            label: ctx => (ctx.dataset.label || '') + ': ' + ctx.parsed.y + '%'
+          }
+        }
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          grid: { color: 'rgba(0,0,0,0.05)' },
+          ticks: {
+            font: { family: "'Noto Sans JP', sans-serif", size: 11 },
+            callback: v => v + '%'
+          }
+        },
+        x: {
+          grid: { display: false },
+          ticks: { font: { family: "'Noto Sans JP', sans-serif", size: 12, weight: '700' } }
+        }
+      }
+    }
+  });
 
-                                <!-- キャンペーン特典ボックス -->
-                                <div class="bg-gradient-to-r from-red-50 to-amber-50 border-2 border-red-400 rounded-xl p-4 mb-6 text-left">
-                                    <p class="text-xs font-extrabold text-red-600 text-center mb-2 tracking-widest uppercase">🎉 このサイト限定キャンペーン</p>
-                                    <div class="flex items-center justify-between">
-                                        <div>
-                                            <p class="text-sm font-bold text-gray-800">電極カートリッジ 1本</p>
-                                            <p class="text-xs text-gray-500">通常価格 <span class="line-through">39,600円</span></p>
-                                        </div>
-                                        <div class="bg-red-600 text-white font-extrabold text-xl px-4 py-1.5 rounded-lg shadow-md flex-shrink-0 ml-2">
-                                            無料！
-                                        </div>
-                                    </div>
-                                </div>
+  // ── Intersection Observer (reveal) ──
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
 
-                                <div class="bg-pink-50 rounded-lg p-5 text-left h-full">
-                                    <p class="text-xs text-pink-500 font-bold text-center mb-3">内訳 (税別)</p>
-                                    <ul class="text-sm text-gray-700 space-y-2">
-                                        <li class="flex items-start">
-                                            <span class="text-pink-400 mr-2">●</span>本体 512,000円
-                                        </li>
-                                        <li class="flex items-start">
-                                            <span class="text-pink-400 mr-2">●</span>電極カートリッジ (付属品)<br>36,000円
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-         <section id="contact" class="py-20 bg-white">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl md:text-4xl font-bold mb-8 font-serif text-center">
-                    まずは詳細資料を入手
-                </h2>
-                <p class="text-lg text-gray-600 mb-12 text-center">
-                    資料請求、ご注文は以下のフォームよりお願いいたします。
-                </p>
-
-                <div class="max-w-3xl mx-auto bg-gray-50 rounded-2xl shadow-xl p-4 sm:p-8">
-                    <div class="overflow-hidden rounded-lg">
-                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd5_v4oBus47OHPkvdEqTovSrhM-NyR2Lx6-v5TfNu7qC2-kA/viewform?embedded=true" 
-                                class="w-full" 
-                                height="1763" 
-                                frameborder="0" 
-                                marginheight="0" 
-                                marginwidth="0">
-                            読み込んでいます...
-                        </iframe>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="py-12 bg-gray-900 text-gray-400 border-t border-gray-800">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div class="grid md:grid-cols-2 gap-8 mb-10 max-w-2xl mx-auto">
-                <div>
-                    <p class="text-lg font-bold text-white mb-2">
-                        📞 お電話でのお問い合わせ
-                    </p>
-                    <a href="tel:0120-977-801" class="text-2xl font-bold text-amber-500 hover:text-amber-400 transition-colors font-serif block">
-                        0120-977-801
-                    </a>
-                    <p class="text-xs text-gray-500 mt-1">
-                        受付時間: 平日 9:00〜17:00
-                    </p>
-                </div>
-                <div>
-                    <p class="text-lg font-bold text-white mb-2">
-                        💬 LINEでのお問い合わせ
-                    </p>
-                    <a href="https://line.me/ti/p/HL4WuSjHwA" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center bg-[#06C755] text-white text-sm font-bold px-6 py-3 rounded-full hover:bg-[#05b34c] transition-colors shadow-lg">
-    LINEで問い合わせる
-</a>
-                </div>
-            </div>
-            
-            <div class="flex justify-center space-x-8 mb-8 text-sm">
-    <button onclick="document.getElementById('privacyModal').classList.add('active')" class="hover:text-white transition-colors focus:outline-none">プライバシーポリシー</button>
-    <a href="https://mindf.jp/" class="hover:text-white transition-colors">会社概要</a>
-            </div>
-            <div class="text-xs text-gray-600">
-                <p class="mb-1">株式会社マインドフィットネス</p>
-                <p>&copy; 2025 Mind Fitness Co,Ltd. All Rights Reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <div id="privacyModal" class="modal fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4">
-        <div class="bg-white rounded-xl shadow-2xl max-w-2xl w-full max-h-[80vh] overflow-y-auto">
-            <div class="p-6 border-b border-gray-100 flex justify-between items-center sticky top-0 bg-white">
-                <h3 class="text-lg font-bold text-gray-900">プライバシーポリシー</h3>
-                <button onclick="document.getElementById('privacyModal').classList.remove('active')" class="text-gray-400 hover:text-gray-600 text-2xl leading-none">&times;</button>
-            </div>
-            <div class="p-6 text-sm text-gray-600 leading-relaxed space-y-4">
-                <p>株式会社マインドフィットネス（以下、「当社」といいます。）は、本ウェブサイト上で提供するサービスにおける、ユーザーの個人情報の取扱いについて、以下のとおりプライバシーポリシー（以下、「本ポリシー」といいます。）を定めます。</p>
-                
-                <h4 class="font-bold text-gray-800 mt-4">1. 個人情報の収集について</h4>
-                <p>当社は、お問い合わせや資料請求の際に、氏名、住所、電話番号、メールアドレスなどの個人情報をお尋ねすることがあります。</p>
-                
-                <h4 class="font-bold text-gray-800 mt-4">2. 個人情報の利用目的</h4>
-                <p>収集した個人情報は、お問い合わせへの回答、資料の送付、および当社のサービス向上のために利用いたします。</p>
-                
-                <h4 class="font-bold text-gray-800 mt-4">3. 個人情報の第三者提供</h4>
-                <p>当社は、法令に基づく場合を除き、あらかじめユーザーの同意を得ることなく、第三者に個人情報を提供することはありません。</p>
-                
-                <h4 class="font-bold text-gray-800 mt-4">4. 個人情報の管理</h4>
-                <p>当社は、個人情報の漏洩、滅失またはき損の防止その他の個人情報の安全管理のために必要かつ適切な措置を講じます。</p>
-                
-                <h4 class="font-bold text-gray-800 mt-4">5. お問い合わせ窓口</h4>
-                <p>本ポリシーに関するお問い合わせは、下記までお願いいたします。<br>
-                株式会社マインドフィットネス<br>
-                電話番号：0120-977-801</p>
-            </div>
-            <div class="p-4 bg-gray-50 text-center rounded-b-xl">
-                <button onclick="document.getElementById('privacyModal').classList.remove('active')" class="bg-gray-800 text-white px-6 py-2 rounded-lg text-sm font-bold hover:bg-gray-700 transition-colors">
-                    閉じる
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const ctx = document.getElementById('repeatRateChart').getContext('2d');
-            
-            // グラデーション作成
-            let gradientBefore = ctx.createLinearGradient(0, 0, 0, 300);
-            gradientBefore.addColorStop(0, '#cbd5e1'); // Slate 300
-            gradientBefore.addColorStop(1, '#94a3b8'); // Slate 400
-            
-            let gradientAfter = ctx.createLinearGradient(0, 0, 0, 300);
-            gradientAfter.addColorStop(0, '#fbbf24'); // Amber 400
-            gradientAfter.addColorStop(1, '#d97706'); // Amber 600
-
-            new Chart(ctx, {
-                type: 'bar',
-                data: {
-                    labels: ['導入前', '導入後'],
-                    datasets: [{
-                        label: 'リピート率 (相対値)',
-                        data: [100, 150],
-                        backgroundColor: [
-                            gradientBefore,
-                            gradientAfter
-                        ],
-                        borderWidth: 0,
-                        borderRadius: 6,
-                        barPercentage: 0.6
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: {
-                        legend: { display: false },
-                        tooltip: {
-                            callbacks: {
-                                label: function(context) {
-                                    let label = context.dataset.label || '';
-                                    if (label) { label += ': '; }
-                                    if (context.parsed.y !== null) { label += context.parsed.y + '%'; }
-                                    return label;
-                                }
-                            }
-                        }
-                    },
-                    scales: {
-                        y: {
-                            beginAtZero: true,
-                            grid: { color: '#f3f4f6' },
-                            ticks: { 
-                                display: true,
-                                callback: function(value) {
-                                    return value + '%';
-                                }
-                            }
-                        },
-                        x: {
-                            grid: { display: false },
-                            ticks: { font: { weight: 'bold' } }
-                        }
-                    }
-                }
-            });
-
-            // モーダル外側クリックで閉じる
-            const modal = document.getElementById('privacyModal');
-            modal.addEventListener('click', (e) => {
-                if (e.target === modal) {
-                    modal.classList.remove('active');
-                }
-            });
-        });
-    </script>
+  // ── モーダル背景クリックで閉じる ──
+  document.getElementById('privacyModal').addEventListener('click', e => {
+    if (e.target === document.getElementById('privacyModal'))
+      document.getElementById('privacyModal').classList.remove('active');
+  });
+});
+</script>
 
 </body>
 </html>
